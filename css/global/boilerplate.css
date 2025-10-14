@@ -1,0 +1,132 @@
+:root {
+  /* Screamin' Green */
+  --screaming-green-100: hsl(117, 95%, 93%);
+  --screaming-green-200: hsl(117, 87%, 85%);
+  --screaming-green-300: hsl(118, 85%, 67%);
+  --screaming-green-400: hsl(118, 77%, 58%);
+  --screaming-green-500: hsl(118, 77%, 45%);
+  --screaming-green-800: hsl(118, 77%, 45%);
+  --screaming-green-950: hsl(121, 88%, 10%);
+
+  /* BLue Shark */
+  --blue-shark-400: hsl(196, 37%, 53%);
+  --blue-shark-900: hsl(205, 27%, 24%);
+  --blue-shark-950: hsl(206, 34%, 12%);
+
+  /* White */
+  --white-50: #ffffff;
+  --white-500: hsl(0, 0%, 49%);
+  --white-950: hsl(0, 0%, 16%);
+
+  /* Spacing Scale (4px Multiplier) */
+  --space-0: 0;
+  --space-4: 0.25rem; /* 4px */
+  --space-8: 0.5rem; /* 8px */
+  --space-12: 0.75rem; /* 12px */
+  --space-16: 1rem; /* 16px */
+  --space-20: 1.25rem; /* 20px */
+  --space-24: 1.5rem; /* 24px */
+  --space-28: 1.75rem; /* 28px */
+  --space-32: 2rem; /* 32px */
+  --space-40: 2.5rem; /* 40px */
+  --space-48: 3rem; /* 48px */
+  --space-56: 3.5rem; /* 56px */
+  --space-64: 4rem; /* 64px */
+  --space-80: 5rem; /* 80px */
+  --space-100: 6.25rem; /* 100px */
+
+  /* Border Radius Scale (Exponen 2) */
+  --br-0: 0px;
+  --br-2: 2px;
+  --br-4: 4px;
+  --br-6: 6px;
+  --br-8: 8px;
+  --br-10: 10px;
+  --br-12: 12px;
+  --br-14: 14px;
+  --br-16: 16px;
+  --br-18: 18px;
+  --br-20: 20px;
+  --br-full: 50%;
+
+  /* Shadows */
+
+  --shadow-color-primary: rgba(0, 0, 0, 0.14);
+  --shadow-color-secondary: rgba(0, 0, 0, 0.12);
+
+  /* Z-Level 1 (1dp) */
+  --shadow-1: 0 1px 3px var(--shadow-color-primary),
+    0 1px 2px var(--shadow-color-secondary);
+
+  /* Z-Level 2 (2dp) */
+  --shadow-2: 0 2px 4px -1px var(--shadow-color-primary),
+    0 4px 5px 0 var(--shadow-color-secondary), 0 1px 10px 0 rgba(0, 0, 0, 0.08);
+
+  /* Z-Level 3 (3dp) */
+  --shadow-3: 0 3px 5px -1px var(--shadow-color-primary),
+    0 6px 10px 0 var(--shadow-color-secondary), 0 1px 18px 0 rgba(0, 0, 0, 0.08);
+
+  /* Z-Level 6 (6dp) */
+  --shadow-6: 0 6px 10px 0 var(--shadow-color-primary),
+    0 1px 18px 0 var(--shadow-color-secondary);
+
+  /* Z-Level 12 (12dp) */
+  --shadow-12: 0 12px 17px 2px var(--shadow-color-primary),
+    0 5px 22px 4px var(--shadow-color-secondary),
+    0 7px 8px -4px rgba(0, 0, 0, 0.2);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+}
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+  font-family: var(--Inter);
+  text-wrap: balance;
+  margin: 0;
+}
+
+p {
+  font-family: var(--Poppins);
+  line-height: var(--lh-poppins-p);
+  font-weight: var(--fw-regular);
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
