@@ -36,18 +36,18 @@
   --space-100: 6.25rem; /* 100px */
 
   /* Border Radius Scale (Exponen 2) */
-  --br-0: 0px;
-  --br-2: 2px;
-  --br-4: 4px;
-  --br-6: 6px;
-  --br-8: 8px;
-  --br-10: 10px;
-  --br-12: 12px;
-  --br-14: 14px;
-  --br-16: 16px;
-  --br-18: 18px;
-  --br-20: 20px;
-  --br-full: 50%;
+--br-0: 0rem;
+--br-2: 0.125rem;
+--br-4: 0.25rem;
+--br-6: 0.375rem;
+--br-8: 0.5rem;
+--br-10: 0.625rem;
+--br-12: 0.75rem;
+--br-14: 0.875rem;
+--br-16: 1rem;
+--br-18: 1.125rem;
+--br-20: 1.25rem;
+--br-full: 50%;
 
   /* Shadows */
 
