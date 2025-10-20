@@ -1,0 +1,49 @@
+.btn-cta {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-16);
+    justify-content: center;
+    align-items: center;
+    font-family: var(--Poppins);
+}
+
+.btn-cta button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-8);
+    width: 100%;
+    padding-block: var(--space-8);
+    font-size: var(--fn-poppins-p);
+    font-weight: var(--fw-semibold);
+    color: var(--white-50);
+    background-color: var(--screaming-green-400);
+    border: none;
+    border-radius: var(--br-10);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-cta .btn-transparent {
+    color: var(--screaming-green-400);
+    background-color: transparent;
+    border: 1px solid var(--screaming-green-400);
+}
+
+.btn-cta button .btn-icon {
+    width: var(--space-32);
+}
+
+.btn-cta button .btn-icon path{
+    fill: currentColor;
+}
+
+.btn-transparent:hover {
+    background-color: var(--screaming-green-400);
+    color: var(--white-50);
+}
+
+.btn-primary:hover {
+    background-color: var(--screaming-green-500);
+    color: #e6e6e6;
+}

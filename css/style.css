@@ -1,6 +1,8 @@
 /* Global */
 @import url("./global/boilerplate.css");
 @import url("./global/fonts.css");
+@import url("./global/buttons.css");
 
 /* components */
 @import url("./components/navigation.css");
+@import url("./components/hero-section.css");
