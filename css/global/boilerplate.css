@@ -130,3 +130,8 @@ li {
 button {
   cursor: pointer;
 }
+
+.container {
+  padding-block: min(calc(var(--space-64) - 0.25rem), 2%);
+  padding-inline: min(calc(var(--space-64) - 0.25rem), 2%);
+}

@@ -10,7 +10,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1rem;
+  padding: var(--space-16);
   color: var(--white-50);
 }
 
@@ -22,7 +22,7 @@ nav .profile-name {
 }
 
 .profile-name img {
-  width: clamp(3rem, 4vw + 1rem, 5rem);
+  width: clamp(2rem, 3vw + 1rem, 3rem);
   height: clamp(2.8rem, 4vw + 0.8rem, 4.8rem);
 }
 
@@ -124,7 +124,7 @@ nav ul li a.active::before {
     position: relative;
     width: 80%;
     margin: 0 auto;
-    padding: 1rem 2rem;
+    /* padding-inline: 2rem; */
     box-shadow: var(--shadow-3);
     border-end-end-radius: 2rem;
     border-end-start-radius: 2rem;
