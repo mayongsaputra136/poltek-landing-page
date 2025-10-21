@@ -41,8 +41,6 @@ nav ul li a {
   display: block;
   position: relative;
   padding-bottom: var(--space-4);
-  /* border-bottom: 2px solid var(--screaming-green-400); */
-
 }
 
 nav ul li a:hover {
@@ -58,7 +56,7 @@ nav ul li a::before {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: var( --screaming-green-300);
+  background-color: var(--screaming-green-300);
   transition: all 0.3s ease;
 }
 
@@ -124,7 +122,6 @@ nav ul li a.active::before {
     position: relative;
     width: 80%;
     margin: 0 auto;
-    /* padding-inline: 2rem; */
     box-shadow: var(--shadow-3);
     border-end-end-radius: 2rem;
     border-end-start-radius: 2rem;
@@ -139,9 +136,13 @@ nav ul li a.active::before {
     width: 40%;
   }
 
-  /* Make it appear in desktop */
+  /* Make name of university it appear in desktop */
   .profile-name h6 {
-    background-image: linear-gradient(to right, var(--screaming-green-400), var(--blue-shark-400));
+    background-image: linear-gradient(
+      to right,
+      var(--screaming-green-400),
+      var(--blue-shark-400)
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -156,6 +157,7 @@ nav ul li a.active::before {
   nav.scrolled {
     position: fixed;
     width: 100%;
+    padding-inline: var(--space-40);
     border-end-end-radius: 0;
     border-end-start-radius: 0;
     transform: translateY(-100%);

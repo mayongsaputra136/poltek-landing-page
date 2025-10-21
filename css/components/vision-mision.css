@@ -1,0 +1,84 @@
+.vision {
+  background-color: var(--screaming-green-100);
+}
+
+.vision .container {
+  display: grid;
+  width: 95%;
+  margin-inline: auto;
+}
+
+/* every h5 in vision have this value */
+.vision .container h5 {
+  font-size: var(--fn-inter-h5);
+  font-weight: var(--fw-bold);
+  color: var(--screaming-green-950);
+}
+
+.rektor-card {
+  position: relative;
+  display: grid;
+  gap: var(--space-16);
+  place-items: center;
+  width: 90%;
+  margin-inline: auto;
+  background-color: var(--white-50);
+}
+
+.rektor-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-bottom-left-radius: var(--br-10);
+  border-bottom-right-radius: var(--br-10);
+  box-shadow: var(--shadow-3);
+}
+
+.rektor-card img {
+  width: 90%;
+  padding-top: var(--space-16);
+  border-bottom-left-radius: var(--br-10);
+  border-bottom-right-radius: var(--br-10);
+}
+
+.rektor-card p {
+  font-size: var(--fn-poppins-sml);
+  color: var(--white-500);
+  padding-bottom: var(--space-16);
+}
+
+/* Vision and Mision */
+.visi p,
+.misi p {
+  font-size: var(--fn-poppins-sml);
+  margin-top: var(--space-16);
+  border-radius: var(--br-10);
+  padding: var(--space-12);
+  line-height: var(--lh-poppins-p);
+  box-shadow: var(--shadow-1);
+  background-color: var(--white-50);
+}
+
+/* visi and mision subtitle */
+.visi h5,
+.misi h5 {
+  margin-top: var(--space-32);
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.22);
+}
+
+@media (min-width: 48rem) {
+  .vision .container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-40);
+    align-items: start;
+    width: 100%;
+  }
+
+  .visi p,
+  .misi p {
+    color: var(--white-800);
+    margin-top: var(--space-20);
+    box-shadow: var(--shadow-2);
+    letter-spacing: 0.5px;
+  }
+}
