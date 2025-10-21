@@ -1,0 +1,93 @@
+.model-wu {
+  position: relative;
+}
+
+.big-circle {
+  position: absolute;
+  top: 0;
+  left: calc(-1 * var(--space-20));
+  display: block;
+  width: clamp(5rem, 10vw, 9.94rem);
+  aspect-ratio: 1 / 1;
+  z-index: -1;
+}
+
+.sml-circle {
+  display: none;
+  position: absolute;
+  width: clamp(4rem, 7vw, 6.81rem);
+  aspect-ratio: 1 / 1;
+  z-index: -1;
+}
+
+.model-bg {
+  position: relative;
+  width: 90%;
+  margin-inline: auto;
+  margin-bottom: var(--space-80);
+}
+
+.circle-blur {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: clamp(20rem, 50vw, 38.06rem);
+  aspect-ratio: 609 / 679;
+  z-index: -1;
+}
+
+.bg-triangle {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  display: block;
+  width: clamp(15rem, 35vw, 30.56rem);
+  aspect-ratio: 1 / 1;
+  z-index: -1;
+}
+
+.model-bg img {
+  width: clamp(15rem, 35vw, 33.75rem);
+  aspect-ratio: auto;
+  margin-left: 1rem;
+}
+
+/* description of benefit */
+.description {
+  display: flex;
+  align-items: center;
+  gap: var(--space-16);
+  margin: var(--space-32) 0 var(--space-12) var(--space-12);
+}
+
+/* Icons for points */
+.icn-point {
+  width: clamp(2.185rem, 0.754rem + 2.15vw, 2.369rem);
+}
+/* Title points */
+.description h4 {
+  font-size: var(--fn-inter-h4);
+  font-weight: var(--fw-bold);
+  color: var(--screaming-green-500);
+}
+
+.point p {
+  font-size: var(--fn-poppins-sml);
+  margin-left: var(--space-12);
+  color: var(--white-800);
+}
+
+@media (min-width: 48rem) {
+  .why-us .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sml-circle {
+    display: block;
+    bottom: 10%;
+    right: 5%;
+  }
+}
