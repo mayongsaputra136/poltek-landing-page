@@ -1,6 +1,7 @@
 :root {
   /* Screamin' Green */
-  --screaming-green-100: hsl(117, 95%, 93%);
+  --screaming-green-50: hsl(116, 88%, 97%);
+  --screaming-green-100: hsl(116, 94%, 93%);
   --screaming-green-200: hsl(117, 87%, 85%);
   --screaming-green-300: hsl(118, 85%, 67%);
   --screaming-green-400: hsl(118, 77%, 58%);

@@ -1,3 +1,8 @@
+.why-us {
+  position: relative;
+  padding-bottom: var(--space-56);
+}
+
 .model-wu {
   position: relative;
 }
@@ -64,7 +69,7 @@
 
 /* Icons for points */
 .icn-point {
-  width: clamp(2.185rem, 0.754rem + 2.15vw, 2.369rem);
+  width: clamp(2.185rem, 0.754rem + 3.15vw, 6.369rem);
 }
 /* Title points */
 .description h4 {

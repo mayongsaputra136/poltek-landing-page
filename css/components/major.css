@@ -1,0 +1,87 @@
+.major {
+    position: relative;
+    background-color: var(--screaming-green-50);
+    padding-bottom: var(--space-100) ;
+}
+
+.major .container {
+    display: grid;
+    gap: var(--space-20);
+}
+
+.container img {
+    margin-inline: auto;
+    border-radius: var(--br-10) ;
+}
+
+.details {
+    position: relative;
+    top: calc(-1 * var(--space-20));
+    width: 90%;
+    margin-inline: auto;
+    border-bottom-left-radius: var(--br-10);
+    border-bottom-right-radius: var(--br-10);
+    box-shadow: var(--shadow-2);
+    background-color: var(--white-50);
+    padding-block: var(--space-20);
+}
+
+/* Name of the class */
+.details h6 {
+    position: relative;
+    font-size: var(--fn-inter-h6);
+    color: var(--screaming-green-950);
+    text-align: center;
+    font-weight: var(--fw-semibold);
+    padding-block: var(--space-12);
+    margin-bottom: var(--space-12);
+}
+
+.details h6::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); /* this transform is used to centering the line, it works with left: 50%*/
+    width: var(--space-64);
+    height: 4px;
+    border-radius: var(--br-20) ;
+    background-color: var(--screaming-green-300);
+    
+}
+
+.details p {
+    font-size: var(--fn-poppins-sml);
+    color: var(--white-500);
+    text-align: center;
+    padding-inline: var(--space-12);
+}
+
+.icn-major {
+    position: absolute;
+    top: calc(-1* var(--space-20));
+    left: 50%;
+    transform: translateX(-50%);
+    width: clamp(2.5rem, 1.591rem + 2.55vw, 3rem);
+}
+
+@media (min-width: 48rem) {
+    .major {
+        padding-bottom: calc( var(--space-100) + var(--space-64));
+    }
+
+    .major .container {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: start;
+    }
+    .TRK .details {
+        padding-bottom: var(--space-56) ;
+    }
+
+    .details {
+        height: 100%;
+    }
+
+}
+
+

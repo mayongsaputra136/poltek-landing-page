@@ -43,9 +43,9 @@
   --fn-inter-h2: clamp(2.104rem, 1.339rem + 3.83vw, 4.209rem);
   --fn-inter-h4: clamp(1.185rem, 0.754rem + 2.15vw, 2.369rem);
   --fn-inter-h5: clamp(0.888rem, 0.565rem + 1.62vw, 1.777rem);
-  --fn-inter-h6: clamp(0.666rem, 0.424rem + 1.21vw, 1.333rem);
+  --fn-inter-h6: clamp(0.999rem, 0.424rem + 1.31vw, 3.333rem);
   --fn-poppins-p: clamp(1rem, 0.76rem + 1.2vw, 1.25rem);
-  --fn-poppins-sml: clamp(0.7rem, 0.5rem + 1vw, 1.25rem);
+  --fn-poppins-sml: clamp(0.7rem, 0.5rem + 1vw, 1.15rem);
   /* Line height */
   --lh-poppins-p: 2;
   /* Thickness */
