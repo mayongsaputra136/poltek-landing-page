@@ -1,0 +1,59 @@
+/* Devider on the bottom of this section (Vision & Mision) */
+/* The direction is to bottom */
+.devider-shape-to-btm {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.devider-shape-to-btm svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 128px;
+}
+
+.devider-shape-to-btm .shape-fill {
+  fill: var(--white-50);
+}
+
+/* This is actualy the same devider, but i change the rotation 0deg*/
+.devider-shape-to-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(0deg);
+}
+
+.devider-shape-to-top svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 128px;
+}
+
+.devider-shape-to-top .shape-fill {
+  fill: var(--white-50);
+}
+
+
+
+/** SVG For mobile devices **/
+@media (max-width: 48rem) {
+  .devider-shape-to-btm svg {
+    width: calc(300% + 1.3px);
+    height: 43px;
+  }
+
+  .devider-shape-to-top svg {
+    width: calc(300% + 1.3px);
+    height: 43px;
+  }
+}
