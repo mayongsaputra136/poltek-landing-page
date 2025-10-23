@@ -41,6 +41,7 @@
     .hero-section {
     display: grid;
     place-items: center;
+    padding-top: var(--space-80);
     }
 
     .btn-cta {

@@ -118,7 +118,7 @@
                         <path d="M489.236 437.965C489.985 466.104 467.368 489.315 439.219 489.295L50.2049 489.023C5.98804 488.992 -16.4289 435.797 14.4296 404.129L393.095 15.5247C423.953 -16.1437 477.711 4.8877 478.888 49.0889L489.236 437.965Z" fill="#47E642"/>
                         </svg>
                         <!-- image model -->
-                        <img src="./assets/images/model-images/model-2-sml.webp" alt="Mahasiswa menunjuk kearah benefit">  
+                        <img src="./assets/images/model-images/model-2.webp" alt="Mahasiswa menunjuk kearah benefit">  
                     </div>
 
                     <!-- sml circle bottom right -->
@@ -279,7 +279,7 @@
                 </div>
              </div>
         </div>
-            
+            <!-- devider on the bottom -->
         <div class="devider-shape-to-btm">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
@@ -290,15 +290,16 @@
         <!-- FAQ -->
          <section id="faq" class="faq">
             <h2>Frequently Asked Questions</h2>
-            <!-- colum right -->
-            <div class="model-rh">
+            <div class="container">
+                <!-- colum Left -->
+                <div class="model-rh">
                 <!-- circle blur top left -->
-                <svg width="167" height="410" viewBox="0 0 167 410" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="circle-blur-t-l" width="407" height="410" viewBox="0 0 407 410" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_f_91_268)">
-                <ellipse cx="-28" cy="205" rx="95" ry="105" fill="#68F263"/>
+                <ellipse cx="196.5" cy="205" rx="110.5" ry="105" fill="#68F263"/>
                 </g>
                 <defs>
-                <filter id="filter0_f_91_268" x="-223" y="0" width="390" height="410" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <filter id="filter0_f_91_268" x="-14" y="0" width="421" height="410" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
                 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
                 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
                 <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_91_268"/>
@@ -312,7 +313,7 @@
                      <img src="./assets/images/model-images/model-3.webp" alt="Sepasang mahasiswa gembira dengan laptop Hp berwarna merah">
                 </div>
                 <!-- circle blur bottom right -->
-                <svg width="323" height="272" viewBox="0 0 323 272" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="circle-clur-b-r" width="323" height="272" viewBox="0 0 323 272" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_f_109_136)">
                 <circle cx="161.5" cy="161.5" r="61.5" fill="#68F263"/>
                 </g>
@@ -326,36 +327,109 @@
                 </svg>
             </div>
 
-            <!-- colum left -->
-            <div class="questions">
-                <div class="question">
-                    <h6>Apakah kampus ini membebaskan uang gedung?</h6>
+            <!-- colum right -->
+            <div class="accor-container">
+                <div class="accor-item">
+                    <button id="accor-btn" class="accor-btn">
+                        Apakah kampus ini membebaskan uang gedung?
+                        <!-- icon open and close + & - -->
+                     <div class="icn-accor">
+                        <img class="icn-plus" src="./assets/images/icons/plus-btn.svg" alt="icon tombol untuk membuka deskripsi jawaban">
+                        <img class="icn-minus" src="./assets/images/icons/minus-btn.svg" alt="icon tombol untuk menutup deskripsi jawaban">
+                    </div>
+                    </button>
+                   
+
+                    <!-- According descriptions -->
+                    <div class="accor-description">
                     <p>Tidak ada. Kampus kami 100% bebas Biaya Pengembangan Gedung (Uang Pangkal). Kami berkomitmen agar investasi pendidikan Anda terfokus sepenuhnya pada kualitas akademik dan fasilitas pendukung, tanpa ada biaya tersembunyi.</p>
+                    </div>
                 </div>
 
-                <div class="question">
-                    <h6>Bagaimana cara mendaftar dikampus ini?</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae veniam, illum iusto debitis itaque reprehenderit asperiores voluptatem corporis, porro necessitatibus possimus vel praesentium eius. Numquam, iste corrupti. Aperiam, id dicta?</p>
+                <!-- question 2 -->
+                <div class="accor-item">
+                    <button id="accor-btn" class="accor-btn">
+                       Bagaimana cara mendaftar dikampus ini?
+                    <div class="icn-accor">
+                        <img class="icn-plus" src="./assets/images/icons/plus-btn.svg" alt="icon tombol untuk membuka deskripsi jawaban">
+                        <img class="icn-minus" src="./assets/images/icons/minus-btn.svg" alt="icon tombol untuk menutup deskripsi jawaban">
+                    </div>
+                    </button>
+                    <!-- icon open and close + & - -->
+                    
+                    <!-- According descriptions -->
+                    <div class="accor-description">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae veniam, illum iusto debitis itaque reprehenderit asperiores voluptatem corporis, porro necessitatibus possimus vel praesentium eius. Numquam, iste corrupti. Aperiam, id dicta?</p>
+                    </div>
                 </div>
 
-                <div class="question">
-                    <h6>Jenis beasiswa apa saja yang tersedian?</h6>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam laboriosam neque quos. Et soluta hic quisquam aspernatur exercitationem quibusdam minima.</p>
+                <!-- question 3 -->
+                <div class="accor-item">
+                    <button id="accor-btn" class="accor-btn">
+                       Jenis beasiswa apa saja yang tersedia?
+                    
+                    <!-- icon open and close + & - -->
+                    <div class="icn-accor">
+                        <img class="icn-plus" src="./assets/images/icons/plus-btn.svg" alt="icon tombol untuk membuka deskripsi jawaban">
+                        <img class="icn-minus" src="./assets/images/icons/minus-btn.svg" alt="icon tombol untuk menutup deskripsi jawaban">
+                    </div>
+
+                    </button>
+                    <!-- According descriptions -->
+                    <div class="accor-description">
+                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam laboriosam neque quos. Et soluta hic quisquam aspernatur exercitationem quibusdam minima.</p>
+                    </div>
                 </div>
 
-                <div class="question">
-                    <h6>Persayaratan apa yang harus dipersiapkan?</h6>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam distinctio, minima maxime vero tempora labore! Maiores error alias eos nisi nam magnam maxime esse ab.</p>
+                <!-- question 4 -->
+                <div class="accor-item">
+                    <button id="accor-btn" class="accor-btn">
+                        Persayaratan apa yang harus dipersiapkan?
+                        <!-- icon open and close + & - -->
+                    <div class="icn-accor">
+                        <img class="icn-plus" src="./assets/images/icons/plus-btn.svg" alt="icon tombol untuk membuka deskripsi jawaban">
+                        <img class="icn-minus" src="./assets/images/icons/minus-btn.svg" alt="icon tombol untuk menutup deskripsi jawaban">
+                    </div>
+                    </button>
+                   
+                    <!-- According descriptions -->
+                    <div class="accor-description">
+                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam distinctio, minima maxime vero tempora labore! Maiores error alias eos nisi nam magnam maxime esse ab.</p>
+                    </div>
                 </div>
 
-                <div class="question">
-                    <h6>Apakkah bisa mendaftar online</h6>
+                <!-- question 5 -->
+                <div class="accor-item">
+                    <button id="accor-btn" class="accor-btn">
+                    Apakkah bisa mendaftar online?
+                     <!-- icon open and close + & - -->
+                    <div class="icn-accor">
+                        <img class="icn-plus" src="./assets/images/icons/plus-btn.svg" alt="icon tombol untuk membuka deskripsi jawaban">
+                        <img class="icn-minus" src="./assets/images/icons/minus-btn.svg" alt="icon tombol untuk menutup deskripsi jawaban">
+                    </div>
+                </button>
+                   
+                    <!-- According descriptions -->
+                    <div class="accor-description">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ut quis ea, odit alias corrupti.</p>
+                    </div>
                 </div>
 
-                <div class="question">
-                    <h6>Apakkah tersedia asrama di kampus</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ut quis ea, odit alias corrupti.</p>
+                <!-- question 6 -->
+                <div class="accor-item">
+                    <button id="accor-btn" class="accor-btn">
+                    Apakkah tersedia asrama di kampus?
+                    <!-- icon open and close + & - -->
+                    <div class="icn-accor">
+                        <img class="icn-plus" src="./assets/images/icons/plus-btn.svg" alt="icon tombol untuk membuka deskripsi jawaban">
+                        <img class="icn-minus" src="./assets/images/icons/minus-btn.svg" alt="icon tombol untuk menutup deskripsi jawaban">
+                    </div>
+                </button>
+                    
+                    <!-- According descriptions -->
+                    <div class="accor-description">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ut quis ea, odit alias corrupti.</p>
+                    </div>
                 </div>
             </div>
         </section>

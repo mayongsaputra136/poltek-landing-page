@@ -1,0 +1,114 @@
+/* .faq {
+  position: relative;
+} */
+
+.container .model-rh {
+  position: relative;
+  overflow: visible;
+}
+
+.circle-blur-t-l {
+  position: absolute;
+  top: calc(-1 * var(--space-40));
+  left: 0;
+  width: clamp(6.25rem, 20vw, 25.44rem);
+  aspect-ratio: 1 / 1;
+  z-index: -1;
+}
+
+.circle-clur-b-r {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: clamp(5rem, 15vw, 20.19rem);
+  aspect-ratio: 1 / 1;
+}
+
+.accor-item {
+  margin-bottom: var(--space-16);
+}
+
+.accor-item button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: var(--fn-inter-h6);
+  text-align: left;
+  font-weight: var(--fw-semibold);
+  color: var(--screaming-green-950);
+  gap: var(--space-16);
+  background-color: var(--screaming-green-100);
+  padding: var(--space-20) var(--space-16);
+  border-radius: var(--br-10);
+  border: none;
+  border-left: 4px solid var(--screaming-green-500);
+}
+
+.accor-item button:hover {
+  color: var(--screaming-green-500);
+}
+
+.accor-item .icn-accor img {
+  max-width: var(--space-20);
+}
+
+.accor-item .icn-accor .icn-minus {
+  display: none;
+}
+
+.accor-description {
+  background-color: var(--screaming-green-200);
+  color: var(--screaming-green-950);
+  font-size: var(--fn-poppins-sml);
+  line-height: var(--lh-poppins-p);
+  padding-inline: var(--space-16);
+  border-left: 4px solid var(--screaming-green-500);
+  border-bottom-left-radius: var(--br-10);
+  border-bottom-right-radius: var(--br-10);
+  transition: all 0.3s ease-in-out;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.accor-btn.active + .accor-description {
+  padding: var(--space-16);
+}
+
+.accor-btn.active .icn-minus {
+  display: block; /* Show icon minus */
+}
+
+.accor-btn.active .icn-plus {
+  display: none; /* Hide icon-plus*/
+}
+
+.accor-item button.active {
+  transition: all 0.5s ease-in-out;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+@media (min-width: 48rem) {
+  .faq .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .circle-blur-t-l {
+    position: absolute;
+    top: calc(-1 * var(--space-100) - var(--space-32));
+    left: calc(-1 * var(--space-64) - var(--space-8));
+    /* left: 0; */
+    width: clamp(6.25rem, 20vw, 25.44rem);
+    aspect-ratio: 1 / 1;
+    z-index: -1;
+  }
+
+  .circle-clur-b-r {
+    position: absolute;
+    /* bottom:  calc(-1 * var(--space-64) - var(--space-8)); */
+    right: 0;
+    
+  }
+}

@@ -97,7 +97,6 @@ html {
 }
 
 section {
-  /* padding-top: calc(var(--space-100) + var(--space-32)); */
   padding-top: var(--space-100);
 }
 
