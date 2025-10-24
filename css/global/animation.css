@@ -1,0 +1,45 @@
+:root {
+  --translateX: 3.125rem;
+  --trasnlateY: 3.125rem;
+  --scale-up: 0.8;
+}
+.fade-in,
+.fade-in-up,
+.zoom-in,
+.slide-in-left,
+.slide-in-down {
+  opacity: 0;
+  transition: all 0.5s ease-out;
+}
+
+.fade-in-up {
+  transform: translateY(var(--trasnlateY));
+}
+
+.zoom-in {
+  transform: scale(var(--scale-up));
+}
+
+.slide-in-left {
+  transform: translateX(calc(-1 * var(--translateX)));
+}
+
+.slide-in-down {
+  transform: translateY(calc(-1 * var(--trasnlateY)));
+}
+
+.fade-in.appear
+.fade-in-up.appear,
+.zoom-in.appear,
+.slide-in-left.appear,
+.slide-in-down.appear {
+  opacity: 1;
+  transform: none; /* Kembalikan ke posisi awal (penting!) */
+  /* Ganti transisi agar lebih lambat dan halus */
+  transition: all 1s ease-in-out; 
+}
+
+.animation.appear {
+  opacity: 1;
+  transform: none;
+}
