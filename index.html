@@ -1,475 +1,1081 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Politeknik Insan Tazakka</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
 
-    <link rel="shortcut icon" href="./assets/images/logos/Poltek-logo.svg" type="image/x-icon">
-</head>
-<body>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logos/Poltek-logo.svg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
     <header class="header-wrapper">
-        <nav>
-            <!-- logo poltek & name -->
-            <div class="profile-name">
-                <img src="./assets/images/logos/Poltek-logo.svg" alt="Logo Politeknik Insan Tazakka">
-                <h6>Politeknik Insan Tazakka</h6>
-            </div>
-            <ul>
-                <li><a href="#beranda">Beranda</a></li>
-                <li><a href="#tentang-kami">Tentang Kami</a></li>
-                <li><a href="#prodi">Prodi</a></li>
-                <li><a href="#faq">FAQ</a></li>
-            </ul>
+      <nav>
+        <!-- logo poltek & name -->
+        <div class="profile-name">
+          <img
+            src="./assets/images/logos/Poltek-logo.svg"
+            alt="Logo Politeknik Insan Tazakka"
+          />
+          <h6>Politeknik Insan Tazakka</h6>
+        </div>
+        <ul>
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#tentang-kami">Tentang Kami</a></li>
+          <li><a href="#prodi">Prodi</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
 
-            <!-- menu bar -->
-            <svg class="menubar" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M7.50001 33.75C6.96876 33.75 6.52376 33.57 6.16501 33.21C5.80626 32.85 5.62626 32.405 5.62501 31.875C5.62376 31.345 5.80376 30.9 6.16501 30.54C6.52626 30.18 6.97126 30 7.50001 30H37.5C38.0313 30 38.4769 30.18 38.8369 30.54C39.1969 30.9 39.3763 31.345 39.375 31.875C39.3738 32.405 39.1938 32.8506 38.835 33.2119C38.4763 33.5731 38.0313 33.7525 37.5 33.75H7.50001ZM7.50001 24.375C6.96876 24.375 6.52376 24.195 6.16501 23.835C5.80626 23.475 5.62626 23.03 5.62501 22.5C5.62376 21.97 5.80376 21.525 6.16501 21.165C6.52626 20.805 6.97126 20.625 7.50001 20.625H37.5C38.0313 20.625 38.4769 20.805 38.8369 21.165C39.1969 21.525 39.3763 21.97 39.375 22.5C39.3738 23.03 39.1938 23.4756 38.835 23.8369C38.4763 24.1981 38.0313 24.3775 37.5 24.375H7.50001ZM7.50001 15C6.96876 15 6.52376 14.82 6.16501 14.46C5.80626 14.1 5.62626 13.655 5.62501 13.125C5.62376 12.595 5.80376 12.15 6.16501 11.79C6.52626 11.43 6.97126 11.25 7.50001 11.25H37.5C38.0313 11.25 38.4769 11.43 38.8369 11.79C39.1969 12.15 39.3763 12.595 39.375 13.125C39.3738 13.655 39.1938 14.1006 38.835 14.4619C38.4763 14.8231 38.0313 15.0025 37.5 15H7.50001Z"/>
-            </svg>
-        </nav>
+        <!-- menu bar -->
+        <svg
+          class="menubar"
+          width="45"
+          height="45"
+          viewBox="0 0 45 45"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M7.50001 33.75C6.96876 33.75 6.52376 33.57 6.16501 33.21C5.80626 32.85 5.62626 32.405 5.62501 31.875C5.62376 31.345 5.80376 30.9 6.16501 30.54C6.52626 30.18 6.97126 30 7.50001 30H37.5C38.0313 30 38.4769 30.18 38.8369 30.54C39.1969 30.9 39.3763 31.345 39.375 31.875C39.3738 32.405 39.1938 32.8506 38.835 33.2119C38.4763 33.5731 38.0313 33.7525 37.5 33.75H7.50001ZM7.50001 24.375C6.96876 24.375 6.52376 24.195 6.16501 23.835C5.80626 23.475 5.62626 23.03 5.62501 22.5C5.62376 21.97 5.80376 21.525 6.16501 21.165C6.52626 20.805 6.97126 20.625 7.50001 20.625H37.5C38.0313 20.625 38.4769 20.805 38.8369 21.165C39.1969 21.525 39.3763 21.97 39.375 22.5C39.3738 23.03 39.1938 23.4756 38.835 23.8369C38.4763 24.1981 38.0313 24.3775 37.5 24.375H7.50001ZM7.50001 15C6.96876 15 6.52376 14.82 6.16501 14.46C5.80626 14.1 5.62626 13.655 5.62501 13.125C5.62376 12.595 5.80376 12.15 6.16501 11.79C6.52626 11.43 6.97126 11.25 7.50001 11.25H37.5C38.0313 11.25 38.4769 11.43 38.8369 11.79C39.1969 12.15 39.3763 12.595 39.375 13.125C39.3738 13.655 39.1938 14.1006 38.835 14.4619C38.4763 14.8231 38.0313 15.0025 37.5 15H7.50001Z"
+          />
+        </svg>
+      </nav>
     </header>
 
     <main>
-        <!-- Hero Sections -->
-        <section id="beranda" class="hero-section overlay">
-            <div class="container">
-                    <h1>Selamat Datang Di Webiste Resmi Politeknik Insan Tazakka</h1>
-                    <h4>Berkarakter, Inovatif, dan Unggul</h4>
-                    <div class="btn-cta">
-                        <button class="btn-transparent">
-                            Hubungi Kami
-                            <svg class="btn-icon" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9.375 16.875C9.375 13.394 10.7578 10.0556 13.2192 7.59422C15.6806 5.13281 19.019 3.75 22.5 3.75C25.981 3.75 29.3194 5.13281 31.7808 7.59422C34.2422 10.0556 35.625 13.394 35.625 16.875V18.8156C38.805 19.2713 41.25 22.0069 41.25 25.3125V25.7813C41.25 29.1094 38.3794 32.0269 35.0025 31.8713C33.615 35.8462 30.0863 38.5256 26.2781 39.2044C25.3969 39.5269 24.3544 39.375 23.4375 39.375C22.6916 39.375 21.9762 39.0787 21.4488 38.5512C20.9213 38.0238 20.625 37.3084 20.625 36.5625C20.625 35.8166 20.9213 35.1012 21.4488 34.5738C21.9762 34.0463 22.6916 33.75 23.4375 33.75C24.9244 33.75 26.5706 33.5344 27.5756 34.8919C30.0056 33.735 31.875 31.2919 31.875 28.125V16.875C31.875 14.3886 30.8873 12.004 29.1291 10.2459C27.371 8.48772 24.9864 7.5 22.5 7.5C20.0136 7.5 17.629 8.48772 15.8709 10.2459C14.1127 12.004 13.125 14.3886 13.125 16.875V28.5938C13.125 29.464 12.7793 30.2986 12.1639 30.9139C11.5486 31.5293 10.714 31.875 9.84375 31.875C8.22759 31.875 6.67762 31.233 5.53482 30.0902C4.39202 28.9474 3.75 27.3974 3.75 25.7813V25.3125C3.7496 23.7342 4.31805 22.2085 5.35117 21.0153C6.38428 19.822 7.81284 19.0411 9.375 18.8156V16.875Z" fill="white"/>
-                            </svg>
-                        </button>
-                        <button class="btn-primary">
-                            Daftar Sekarang
-                            <svg class="btn-icon" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M40.6055 19.6875C41.2207 19.6875 41.792 19.7974 42.3193 20.0171C42.8467 20.2368 43.3154 20.5444 43.7256 20.9399C44.1357 21.3354 44.4434 21.7969 44.6484 22.3242C44.8535 22.8516 44.9707 23.4229 45 24.0381C45 24.6094 44.8901 25.166 44.6704 25.708C44.4507 26.25 44.1357 26.7261 43.7256 27.1362L27.9712 42.9346L19.6875 45L21.7529 36.7163L37.5073 20.9399C37.9175 20.5298 38.3936 20.2222 38.9355 20.0171C39.4775 19.812 40.0342 19.7021 40.6055 19.6875ZM41.7261 25.1587C42.0337 24.8511 42.1875 24.4775 42.1875 24.0381C42.1875 23.584 42.041 23.2178 41.748 22.9395C41.4551 22.6611 41.0742 22.5146 40.6055 22.5C40.4004 22.5 40.2026 22.5293 40.0122 22.5879C39.8218 22.6465 39.6533 22.7563 39.5068 22.9175L24.3018 38.1665L23.5547 41.1328L26.521 40.3857L41.7261 25.1587ZM14.0625 19.6875H11.25V16.875H14.0625V19.6875ZM33.75 19.6875H16.875V16.875H33.75V19.6875ZM11.25 25.3125H14.0625V28.125H11.25V25.3125ZM14.0625 11.25H11.25V8.4375H14.0625V11.25ZM33.75 11.25H16.875V8.4375H33.75V11.25ZM8.4375 36.5625H18.1714L17.4683 39.375H5.625V0H39.375V16.3257C38.3936 16.4722 37.4561 16.7944 36.5625 17.2925V2.8125H8.4375V36.5625ZM16.875 25.3125H28.1689L25.3564 28.125H16.875V25.3125Z" fill="black"/>
-                            </svg>
-                        </button>
-                    </div>
-            </div>
-       
-        </section>
-        <!-- End Hero Sections -->
-
-        <!-- Visi Misi -->
-        <section id="tentang-kami" class="vision">
-            <div class="container">
-                <div class="rektor-card">
-                <img src="./assets/images/model-images/Dr.Macrhus-Alie.webp" alt="Rektor Politeknik Insan Tazakka">
-                <h5>Dr.H.Machrus Alie, S.T., M.Si</h5>
-                <p>Rektor Politeknik Insan Tazakka</p>
-            </div>
-                <div class="moto">
-                        <div class="visi">
-                        <h5>Visi</h5>
-                        <p>Menjadikan pendidikan vokasi (Poltek IT) terunggul dibidang operasional sistem dalam hal rekayasa manufaktur, rekayasa manajemen rantai pasok bisnis (logistik) dan sistem rekayasa komputer secara nasional.</p>
-                    </div>
-
-                    <div class="misi">
-                        <h5>Misi</h5>
-                        <p>Melaksanakan pendidikan teknis operasional dibidang rekayasa manufaktur, rekayasa komputer dan rekayasa logistik yang berorientasi pada kebutuhan dunia industri dan bisnis.</p>
-                        <p>Mendidik mahasiswa untuk memahami dan menguasai pekerjaan operasional harian dan kontekstual dalam bidang rekayasa manufaktur, rekayasa komputer dan rekayasa logistik.</p>
-                        <p>Meningkatkan tanggung jawab sosial dan etika profesi dalam keahlian yang dimiliki, serta menawarkan program relevan kepada sektor bisnis manufaktur, logistik, dan komputer melalui layanan terfokus, efektif, berkualitas tinggi, dengan keahlian rekayasa manufaktur, komputer, dan logistik berstandar nasional dan internasional.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Devider shape on the bottom -->
-            <div class="devider-shape-to-btm">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-                </svg>
-            </div>
-        </section>
-        <!-- End Visi Misi -->
-
-        <!-- Why Us Section -->
-        <section class="why-us">
-            <h2>Mengapa Kami</h2>
-
-            <div class="container">
-                <!-- colum left -->
-                <div class="model-wu">
-                        <!-- big circle top left -->
-                        <svg class="big-circle" width="159" height="159" viewBox="0 0 159 159" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle opacity="0.25" cx="79.5" cy="79.5" r="79.5" fill="#47E642"/>
-                        </svg>
-
-                        <!-- model -->
-                        <div class="model-bg">
-                        <!-- Circle Blur -->
-                        <svg class="circle-blur" width="609" height="679" viewBox="0 0 609 679" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g filter="url(#filter0_f_89_169)">
-                        <circle cx="269.5" cy="339.5" r="139.5" fill="#1FCD1A"/>
-                        </g>
-                        <defs>
-                        <filter id="filter0_f_89_169" x="-70" y="0" width="679" height="679" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                        <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_89_169"/>
-                        </filter>
-                        </defs>
-                        </svg>
-                        <!-- triangle -->
-                        <svg class="bg-triangle" width="490" height="490" viewBox="0 0 490 490" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M489.236 437.965C489.985 466.104 467.368 489.315 439.219 489.295L50.2049 489.023C5.98804 488.992 -16.4289 435.797 14.4296 404.129L393.095 15.5247C423.953 -16.1437 477.711 4.8877 478.888 49.0889L489.236 437.965Z" fill="#47E642"/>
-                        </svg>
-                        <!-- image model -->
-                        <img src="./assets/images/model-images/model-2.webp" alt="Mahasiswa menunjuk kearah benefit">  
-                    </div>
-
-                    <!-- sml circle bottom right -->
-                    <svg class="sml-circle" width="109" height="109" viewBox="0 0 109 109" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle opacity="0.2" cx="54.5" cy="54.5" r="54.5" fill="#47E642"/>
-                    </svg>
-                </div>
-            <!-- colum right -->
-                <div class="points">
-                    <div class="point">
-                        
-                        <div class="description">
-                                <svg class="icn-point" width="54" height="55" viewBox="0 0 54 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="27" cy="27.3992" r="27" fill="#68F263"/>
-                        <g filter="url(#filter0_d_89_144)">
-                        <path d="M12.1504 40.4705H41.8496C42.0241 40.4705 42.1683 40.5284 42.3057 40.6648C42.4427 40.8009 42.4999 40.9423 42.5 41.113V42.8992H11.5V41.113C11.5001 40.9423 11.5573 40.8009 11.6943 40.6648C11.8317 40.5284 11.9759 40.4705 12.1504 40.4705ZM19.0332 23.3279V37.0417H22.167V23.3279H25.4336V37.0417H28.5664V23.3279H31.833V37.0417H34.9668V23.3279H38.2334V37.0417H39.7168C39.8912 37.0418 40.0354 37.0996 40.1729 37.2361C40.31 37.3723 40.3662 37.5144 40.3662 37.6853V38.3279H13.6338V37.6853C13.6338 37.5144 13.69 37.3723 13.8271 37.2361C13.9646 37.0996 14.1088 37.0418 14.2832 37.0417H15.7666V23.3279H19.0332ZM42.5 18.5857V20.0417H40.3662V20.5417C40.3662 20.7126 40.31 20.8548 40.1729 20.991C40.0354 21.1274 39.8912 21.1853 39.7168 21.1853H14.2832C14.1088 21.1853 13.9646 21.1274 13.8271 20.991C13.69 20.8548 13.6338 20.7126 13.6338 20.5417V20.0417H11.5V18.5857L27 11.9431L42.5 18.5857Z" fill="#1FCD1A" stroke="#146912"/>
-                        </g>
-                        <defs>
-                        <filter id="filter0_d_89_144" x="9" y="11.3992" width="40" height="40" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                        <feOffset dx="2" dy="4"/>
-                        <feGaussianBlur stdDeviation="2"/>
-                        <feComposite in2="hardAlpha" operator="out"/>
-                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_89_144"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_89_144" result="shape"/>
-                        </filter>
-                        </defs>
-                        </svg>
-                            <h4>Tanpa Uang Gedung</h4>
-                            </div>
-                            <p>Tanpa Biaya Pengembangan Gedung (Uang Pangkal/Gedung). Fokuskan dana studi Anda langsung pada pengembangan akademik.</p>
-                    </div>
-
-                    <div class="point">
-                        
-                        <div class="description">
-                                <svg class="icn-point" width="54" height="54" viewBox="0 0 53 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="26.2594" cy="27.0001" r="26.2594" fill="#68F263"/>
-                            <g filter="url(#filter0_d_89_154)">
-                            <mask id="path-2-inside-1_89_154" fill="white">
-                            <path d="M26.4332 12.2292L10.6274 22.0765L26.4332 31.9238L39.3651 23.8654V35.2062H42.2389V22.0765M16.375 28.9368V35.5016L26.4332 41.771L36.4913 35.5016V28.9368L26.4332 35.2062L16.375 28.9368Z"/>
-                            </mask>
-                            <path d="M26.4332 12.2292L10.6274 22.0765L26.4332 31.9238L39.3651 23.8654V35.2062H42.2389V22.0765M16.375 28.9368V35.5016L26.4332 41.771L36.4913 35.5016V28.9368L26.4332 35.2062L16.375 28.9368Z" fill="#1FCD1A"/>
-                            <path d="M10.6274 22.0765L10.0987 21.2278L8.73633 22.0765L10.0987 22.9253L10.6274 22.0765ZM26.4332 31.9238L25.9044 32.7725L26.4332 33.102L26.962 32.7725L26.4332 31.9238ZM39.3651 23.8654H40.3651V22.064L38.8362 23.0167L39.3651 23.8654ZM39.3651 35.2062H38.3651V36.2062H39.3651V35.2062ZM42.2389 35.2062V36.2062H43.2389V35.2062H42.2389ZM16.375 28.9368L16.9039 28.0881L15.375 27.1351V28.9368H16.375ZM16.375 35.5016H15.375V36.0567L15.846 36.3503L16.375 35.5016ZM26.4332 41.771L25.9042 42.6197L26.4332 42.9494L26.9621 42.6197L26.4332 41.771ZM36.4913 35.5016L37.0203 36.3503L37.4913 36.0567V35.5016H36.4913ZM36.4913 28.9368H37.4913V27.1351L35.9624 28.0881L36.4913 28.9368ZM26.4332 35.2062L25.9042 36.0548L26.4332 36.3846L26.9621 36.0548L26.4332 35.2062ZM26.4332 12.2292L25.9044 11.3805L10.0987 21.2278L10.6274 22.0765L11.1562 22.9253L26.9619 13.078L26.4332 12.2292ZM10.6274 22.0765L10.0987 22.9253L25.9044 32.7725L26.4332 31.9238L26.9619 31.075L11.1562 21.2278L10.6274 22.0765ZM26.4332 31.9238L26.962 32.7725L39.894 24.7141L39.3651 23.8654L38.8362 23.0167L25.9043 31.0751L26.4332 31.9238ZM39.3651 23.8654H38.3651V35.2062H39.3651H40.3651V23.8654H39.3651ZM39.3651 35.2062V36.2062H42.2389V35.2062V34.2062H39.3651V35.2062ZM42.2389 35.2062H43.2389V22.0765H42.2389H41.2389V35.2062H42.2389ZM16.375 28.9368H15.375V35.5016H16.375H17.375V28.9368H16.375ZM16.375 35.5016L15.846 36.3503L25.9042 42.6197L26.4332 41.771L26.9621 40.9224L16.9039 34.653L16.375 35.5016ZM26.4332 41.771L26.9621 42.6197L37.0203 36.3503L36.4913 35.5016L35.9624 34.653L25.9042 40.9224L26.4332 41.771ZM36.4913 35.5016H37.4913V28.9368H36.4913H35.4913V35.5016H36.4913ZM36.4913 28.9368L35.9624 28.0881L25.9042 34.3576L26.4332 35.2062L26.9621 36.0548L37.0203 29.7854L36.4913 28.9368ZM26.4332 35.2062L26.9621 34.3576L16.9039 28.0881L16.375 28.9368L15.846 29.7854L25.9042 36.0548L26.4332 35.2062Z" fill="#146912" mask="url(#path-2-inside-1_89_154)"/>
-                            </g>
-                            <defs>
-                            <filter id="filter0_d_89_154" x="7.19067" y="7.30566" width="42.4851" height="47.3892" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                            <feOffset dx="2" dy="4"/>
-                            <feGaussianBlur stdDeviation="2"/>
-                            <feComposite in2="hardAlpha" operator="out"/>
-                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_89_154"/>
-                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_89_154" result="shape"/>
-                            </filter>
-                            </defs>
-                            </svg>
-                                <h4>Akses Beasiswa Luas</h4>
-                            </div>
-                            <p>Jaringan Beasiswa Luas. Kami secara proaktif menghubungkan Anda dengan berbagai sumber pendanaan. Raih bantuan studi maksimal dan fokus penuh pada pencapaian akademik.</p>
-                    </div>
-
-                    <div class="point">
-                       
-                        <div class="description">
-                             <svg class="icn-point" width="52" height="54" viewBox="0 0 52 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <ellipse cx="25.6419" cy="27" rx="25.6419" ry="27" fill="#68F263"/>
-                        <g filter="url(#filter0_d_89_158)">
-                        <path d="M17.7913 18.1667H38.5579C39.5138 18.1667 40.3372 18.996 40.3372 20.0671V31.2664C40.3372 32.3375 39.5139 33.1667 38.5579 33.1667H36.5383V35.2664C36.5383 35.5192 36.491 35.7694 36.3997 36.0017C36.3082 36.2341 36.1746 36.4445 36.0081 36.6199C35.8417 36.795 35.6457 36.9328 35.4319 37.0261C35.2179 37.1195 34.989 37.1667 34.759 37.1667H13.9924C13.5292 37.1667 13.0793 36.9734 12.7434 36.6199C12.4067 36.2653 12.2131 35.7784 12.2131 35.2664V24.0671C12.2131 23.5551 12.4067 23.0682 12.7434 22.7136C13.0793 22.3601 13.5292 22.1667 13.9924 22.1667H16.012V20.0671C16.012 18.996 16.8353 18.1667 17.7913 18.1667ZM24.3762 26.4998C23.5634 26.4998 22.7894 26.8408 22.2229 27.4373C21.6573 28.0329 21.343 28.835 21.343 29.6667C21.343 30.4985 21.6573 31.3006 22.2229 31.8962C22.7894 32.4927 23.5634 32.8337 24.3762 32.8337C25.1889 32.8336 25.9632 32.4926 26.5295 31.8962C27.0949 31.3007 27.4084 30.4983 27.4084 29.6667L27.3938 29.3562C27.326 28.6376 27.0242 27.9583 26.5295 27.4373C25.9632 26.8409 25.1889 26.4999 24.3762 26.4998ZM17.5442 22.1667H34.759C34.989 22.1667 35.2179 22.214 35.4319 22.3074C35.6458 22.4007 35.8417 22.5385 36.0081 22.7136C36.1746 22.889 36.3082 23.0994 36.3997 23.3318C36.491 23.5641 36.5383 23.8143 36.5383 24.0671V31.4998H38.8049V19.8337H17.5442V22.1667Z" fill="#1FCD1A" stroke="#146912"/>
-                        </g>
-                        <defs>
-                        <filter id="filter0_d_89_158" x="8.44678" y="11" width="38.3904" height="40" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                        <feOffset dx="2" dy="4"/>
-                        <feGaussianBlur stdDeviation="2"/>
-                        <feComposite in2="hardAlpha" operator="out"/>
-                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_89_158"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_89_158" result="shape"/>
-                        </filter>
-                        </defs>
-                        </svg>
-                            <h4>Biaya Kuliah Tetap</h4>
-                        </div>
-                        <p>Biaya Kuliah Tetap. Struktur biaya yang konsisten selama masa studi normal, menghilangkan kekhawatiran fluktuasi biaya tahunan. Fokus pada prestasi tanpa gangguan finansial.</p>
-                    </div>
-
-                    <div class="point">
-                        
-                        <div class="description">
-                        <svg class="icn-point" width="52" height="54" viewBox="0 0 52 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <ellipse cx="25.6473" cy="27" rx="25.6473" ry="27" fill="#68F263"/>
-                        <path d="M30.8704 28.8C32.3221 28.8042 34.5181 29.1723 36.343 29.9026C37.2604 30.2697 38.053 30.7162 38.6077 31.2278C39.1587 31.7361 39.4417 32.2748 39.4417 32.8479V35.5969H32.6448V32.8479C32.6448 31.1896 31.9327 29.8539 30.8704 28.8ZM20.4495 28.8C21.9009 28.8001 24.1121 29.1681 25.9475 29.9026C26.8647 30.2697 27.6565 30.7163 28.2112 31.2278C28.7624 31.7362 29.0461 32.2747 29.0461 32.8479V35.5969H11.8528V32.8479C11.8528 32.2747 12.1365 31.7362 12.6877 31.2278C13.2424 30.7162 14.0341 30.2697 14.9514 29.9026C16.7869 29.1681 18.998 28.8 20.4495 28.8ZM20.4495 18.4036C22.3282 18.4036 23.8352 19.9189 23.8352 21.802C23.8352 23.6852 22.3283 25.2004 20.4495 25.2004C18.5684 25.2004 17.051 23.683 17.051 21.802C17.0511 19.921 18.5685 18.4036 20.4495 18.4036ZM30.845 18.4036C32.7238 18.4036 34.2307 19.9188 34.2307 21.802C34.2307 23.6852 32.7238 25.2004 30.845 25.2004C28.9641 25.2002 27.4465 23.6829 27.4465 21.802C27.4466 19.9211 28.9641 18.4038 30.845 18.4036Z" fill="#1FCD1A" stroke="#146912"/>
-                        </svg>  
-    
-                        <h4>Pemagangan</h4>
-                            </div>
-                            <p>Karier Dimulai Sekarang. Skema Magang Terintegrasi yang fleksibel. Raih pengalaman kerja, jaringan, dan potensi penghasilan tanpa mengorbankan kuliah Anda.</p>
-                    </div>
-                </div>
-            </div>
-            
-        </section>
-        <!-- End Why Us Section -->
-
-        <!-- Major -->
-        <section id="prodi" class="major">
-
-            <!-- Devider direction to top -->
-            <div class="devider-shape-to-top">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-                </svg>
-            </div>
-
-            <h2>Program Studi</h2>
+      <!-- Hero Sections -->
+      <section id="beranda" class="hero-section overlay">
         <div class="container">
-            <!-- TRK -->
-             <div class="TRK">
-                <img src="./assets/images/model-images/supplay-chain.webp" alt="Kelas Praktik Teknik Rekayasa Komputer">
-                <div class="details">
-                    <svg class="icn-major" width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="27" cy="27" r="27" fill="#68F263"/>
-                    <path d="M41.1663 36.833V38.5H12.8333V36.833H41.1663ZM37.6663 15.5C38.2658 15.5 38.7678 15.708 39.1975 16.1377C39.627 16.5673 39.834 17.0679 39.8333 17.666V32.333C39.8333 32.9328 39.6255 33.4346 39.1965 33.8643C38.7681 34.2933 38.2675 34.5007 37.6672 34.5H16.3333C15.7335 34.5 15.2326 34.2928 14.804 33.8643C14.3753 33.4356 14.1671 32.934 14.1663 32.333V17.667C14.1663 17.0675 14.3745 16.5664 14.804 16.1377C15.1801 15.7623 15.6106 15.556 16.1135 15.5098L16.3342 15.5H37.6663ZM15.8333 32.833H38.1663V17.167H15.8333V32.833Z" fill="#1FCD1A" stroke="#146912"/>
-                    </svg>
-                    <h6>Teknik Rekayasa Komputer</h6>
-                    <p>Integrasi Hardware & Software. Rancang dan bangun sistem komputasi modern, mulai dari mikroprosesor hingga jaringan cerdas (Intelligent Systems).</p>
-                </div>
-             </div>
-
-             <!-- TRL -->
-             <div class="TRL">
-                <img src="./assets/images/model-images/supplay-chain.webp" alt="Kelas Praktik Teknik Rekayasa Logistik">
-                <div class="details">
-                    <svg class="icn-major" width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="27" cy="27" r="27" fill="#68F263"/>
-                    <path d="M25.6665 25.4019V39.3237C25.6577 39.3203 25.648 39.3175 25.6392 39.314H25.6382L15.6333 35.311C15.2006 35.138 14.8293 34.8394 14.5679 34.4536C14.3065 34.0677 14.1668 33.6121 14.1665 33.146V20.853C14.1665 20.8361 14.1671 20.8191 14.1675 20.8022L25.6665 25.4019ZM39.8335 20.854V33.146C39.8333 33.6121 39.6935 34.0677 39.4321 34.4536C39.1707 34.8397 38.7987 35.1389 38.3657 35.312L28.3618 39.313H28.3608C28.352 39.3165 28.3424 39.3183 28.3335 39.3218V25.4019L39.8315 20.8022C39.8319 20.8195 39.8335 20.8367 39.8335 20.854ZM30.8296 21.5317L26.9995 23.064L15.8452 18.6021L19.6812 17.0679L30.8296 21.5317ZM25.6382 14.686C26.5123 14.3364 27.4877 14.3354 28.3618 14.6851L38.1519 18.6021L34.4175 20.0962L23.271 15.6313L25.6382 14.6851V14.686Z" fill="#1FCD1A" stroke="#146912"/>
-                    </svg>
-                    <h6>Teknik Rekayasa Logistik</h6>
-                    <p>Kuasai Optimalisasi Rantai Pasok Global. Pelajari manajemen aliran material, informasi, dan finansial untuk menciptakan sistem distribusi paling efisien dan tepat waktu di dunia.</p>
-                </div>
-             </div>
-
-             <!-- TRM -->
-             <div class="TRM">
-                <img src="./assets/images/model-images/mechanical-engineering.webp" alt="Kelas Praktik Teknik Rekayasa Manufaktur">
-                <div class="details">
-               <svg class="icn-major" width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="27" cy="27" r="27" fill="#68F263"/>
-                <path d="M24.3333 14.1667H29.6682C29.7093 14.1667 29.749 14.1813 29.7805 14.2078C29.8109 14.2333 29.8314 14.2685 29.8391 14.3074L30.3313 17.8289L30.3713 18.1179L30.6418 18.2244C31.4271 18.536 32.1087 18.9627 32.7805 19.4666L33.0051 19.6355L33.2668 19.531L36.5862 18.197L36.5891 18.196C36.615 18.1855 36.6518 18.1833 36.6907 18.197C36.7283 18.2103 36.7575 18.235 36.7747 18.2664L36.7805 18.2771L39.4407 22.8787V22.8796C39.4902 22.9705 39.4614 23.0575 39.4124 23.0984L36.6008 25.2712L36.3772 25.4441L36.4104 25.7253C36.4629 26.1716 36.5002 26.5889 36.5002 26.9998C36.5002 27.4101 36.4626 27.8139 36.4104 28.2312L36.3752 28.5115L36.5979 28.6863L39.4104 30.8992C39.4483 30.9291 39.4752 30.9867 39.4651 31.0525L39.4407 31.1208L36.7805 35.7234L36.7747 35.7341C36.7601 35.7608 36.7347 35.7832 36.6956 35.7966C36.6538 35.8109 36.6079 35.8097 36.5715 35.7966L33.2678 34.4568L33.0022 34.3494L32.7756 34.5242C32.1112 35.0353 31.4287 35.4509 30.636 35.7781L30.3713 35.8875L30.3313 36.1707L29.8401 39.6912C29.8271 39.769 29.7562 39.8337 29.6663 39.8337H24.3333C24.2452 39.8337 24.1754 39.7717 24.1604 39.696L23.6682 36.1707L23.6282 35.8826L23.3577 35.7751C22.5731 35.4638 21.8934 35.0384 21.2249 34.5242L20.9973 34.3494L20.7317 34.4568L17.429 35.7966C17.3926 35.8098 17.3468 35.8109 17.3049 35.7966C17.2658 35.7833 17.2405 35.7608 17.2258 35.7341L17.22 35.7234L14.553 31.1101L14.55 31.1062L14.5305 31.0515C14.5206 30.9958 14.5413 30.9384 14.5891 30.9001L17.4026 28.6863L17.6243 28.5115L17.5891 28.2312C17.537 27.8139 17.5002 27.41 17.5002 26.9998C17.5003 26.5889 17.5376 26.1716 17.5901 25.7253L17.6233 25.4441L17.3987 25.2712L14.5862 23.0974C14.525 23.0461 14.5098 22.9625 14.55 22.8943L14.553 22.8904L17.22 18.2771L17.2258 18.2664C17.243 18.2349 17.2721 18.2103 17.3098 18.197C17.3485 18.1835 17.3846 18.1856 17.4104 18.196L17.4133 18.197L20.7336 19.531L20.9944 19.6355L21.22 19.4666C21.8918 18.9627 22.5725 18.5359 23.3577 18.2244L23.6282 18.1179L23.6682 17.8289L24.1604 14.3044C24.1753 14.2286 24.2451 14.1668 24.3333 14.1667ZM27.0002 21.8337C25.6301 21.8337 24.3158 22.3777 23.3469 23.3464C22.3781 24.3153 21.8333 25.6296 21.8333 26.9998C21.8333 28.37 22.378 29.6841 23.3469 30.6531C24.3159 31.622 25.63 32.1667 27.0002 32.1667C28.3705 32.1667 29.6847 31.622 30.6536 30.6531C31.6223 29.6842 32.1663 28.3699 32.1663 26.9998C32.1662 25.6296 31.6224 24.3153 30.6536 23.3464C29.6847 22.3776 28.3704 21.8338 27.0002 21.8337Z" fill="#1FCD1A" stroke="#146912"/>
-                </svg>
-                    <h6>Teknik Rekayasa Manufaktur</h6>
-                    <p>Spesialisasi Otomasi & Industri 4.0. Kuasai robotika dan IoT untuk perencanaan dan pengendalian proses produksi massal, menciptakan produk dengan kualitas dan kuantitas optimal.</p>
-                </div>
-             </div>
+          <h1>Selamat Datang Di Webiste Resmi Politeknik Insan Tazakka</h1>
+          <h4>Berkarakter, Inovatif, dan Unggul</h4>
+          <div class="btn-cta">
+            <button class="btn-transparent">
+              Hubungi Kami
+              <svg
+                class="btn-icon"
+                width="45"
+                height="45"
+                viewBox="0 0 45 45"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.375 16.875C9.375 13.394 10.7578 10.0556 13.2192 7.59422C15.6806 5.13281 19.019 3.75 22.5 3.75C25.981 3.75 29.3194 5.13281 31.7808 7.59422C34.2422 10.0556 35.625 13.394 35.625 16.875V18.8156C38.805 19.2713 41.25 22.0069 41.25 25.3125V25.7813C41.25 29.1094 38.3794 32.0269 35.0025 31.8713C33.615 35.8462 30.0863 38.5256 26.2781 39.2044C25.3969 39.5269 24.3544 39.375 23.4375 39.375C22.6916 39.375 21.9762 39.0787 21.4488 38.5512C20.9213 38.0238 20.625 37.3084 20.625 36.5625C20.625 35.8166 20.9213 35.1012 21.4488 34.5738C21.9762 34.0463 22.6916 33.75 23.4375 33.75C24.9244 33.75 26.5706 33.5344 27.5756 34.8919C30.0056 33.735 31.875 31.2919 31.875 28.125V16.875C31.875 14.3886 30.8873 12.004 29.1291 10.2459C27.371 8.48772 24.9864 7.5 22.5 7.5C20.0136 7.5 17.629 8.48772 15.8709 10.2459C14.1127 12.004 13.125 14.3886 13.125 16.875V28.5938C13.125 29.464 12.7793 30.2986 12.1639 30.9139C11.5486 31.5293 10.714 31.875 9.84375 31.875C8.22759 31.875 6.67762 31.233 5.53482 30.0902C4.39202 28.9474 3.75 27.3974 3.75 25.7813V25.3125C3.7496 23.7342 4.31805 22.2085 5.35117 21.0153C6.38428 19.822 7.81284 19.0411 9.375 18.8156V16.875Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+            <button class="btn-primary">
+              Daftar Sekarang
+              <svg
+                class="btn-icon"
+                width="45"
+                height="45"
+                viewBox="0 0 45 45"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M40.6055 19.6875C41.2207 19.6875 41.792 19.7974 42.3193 20.0171C42.8467 20.2368 43.3154 20.5444 43.7256 20.9399C44.1357 21.3354 44.4434 21.7969 44.6484 22.3242C44.8535 22.8516 44.9707 23.4229 45 24.0381C45 24.6094 44.8901 25.166 44.6704 25.708C44.4507 26.25 44.1357 26.7261 43.7256 27.1362L27.9712 42.9346L19.6875 45L21.7529 36.7163L37.5073 20.9399C37.9175 20.5298 38.3936 20.2222 38.9355 20.0171C39.4775 19.812 40.0342 19.7021 40.6055 19.6875ZM41.7261 25.1587C42.0337 24.8511 42.1875 24.4775 42.1875 24.0381C42.1875 23.584 42.041 23.2178 41.748 22.9395C41.4551 22.6611 41.0742 22.5146 40.6055 22.5C40.4004 22.5 40.2026 22.5293 40.0122 22.5879C39.8218 22.6465 39.6533 22.7563 39.5068 22.9175L24.3018 38.1665L23.5547 41.1328L26.521 40.3857L41.7261 25.1587ZM14.0625 19.6875H11.25V16.875H14.0625V19.6875ZM33.75 19.6875H16.875V16.875H33.75V19.6875ZM11.25 25.3125H14.0625V28.125H11.25V25.3125ZM14.0625 11.25H11.25V8.4375H14.0625V11.25ZM33.75 11.25H16.875V8.4375H33.75V11.25ZM8.4375 36.5625H18.1714L17.4683 39.375H5.625V0H39.375V16.3257C38.3936 16.4722 37.4561 16.7944 36.5625 17.2925V2.8125H8.4375V36.5625ZM16.875 25.3125H28.1689L25.3564 28.125H16.875V25.3125Z"
+                  fill="black"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
-            <!-- devider on the bottom -->
+      </section>
+      <!-- End Hero Sections -->
+
+      <!-- Visi Misi -->
+      <section id="tentang-kami" class="vision">
+        <div class="container">
+          <div class="rektor-card">
+            <img
+              src="./assets/images/model-images/Dr.Macrhus-Alie.webp"
+              alt="Rektor Politeknik Insan Tazakka"
+            />
+            <h5>Dr.H.Machrus Alie, S.T., M.Si</h5>
+            <p>Rektor Politeknik Insan Tazakka</p>
+          </div>
+          <div class="moto">
+            <div class="visi">
+              <h5>Visi</h5>
+              <p>
+                Menjadikan pendidikan vokasi (Poltek IT) terunggul dibidang
+                operasional sistem dalam hal rekayasa manufaktur, rekayasa
+                manajemen rantai pasok bisnis (logistik) dan sistem rekayasa
+                komputer secara nasional.
+              </p>
+            </div>
+
+            <div class="misi">
+              <h5>Misi</h5>
+              <p>
+                Melaksanakan pendidikan teknis operasional dibidang rekayasa
+                manufaktur, rekayasa komputer dan rekayasa logistik yang
+                berorientasi pada kebutuhan dunia industri dan bisnis.
+              </p>
+              <p>
+                Mendidik mahasiswa untuk memahami dan menguasai pekerjaan
+                operasional harian dan kontekstual dalam bidang rekayasa
+                manufaktur, rekayasa komputer dan rekayasa logistik.
+              </p>
+              <p>
+                Meningkatkan tanggung jawab sosial dan etika profesi dalam
+                keahlian yang dimiliki, serta menawarkan program relevan kepada
+                sektor bisnis manufaktur, logistik, dan komputer melalui layanan
+                terfokus, efektif, berkualitas tinggi, dengan keahlian rekayasa
+                manufaktur, komputer, dan logistik berstandar nasional dan
+                internasional.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Devider shape on the bottom -->
         <div class="devider-shape-to-btm">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-                </svg>
-            </div>
-        </section>
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+      </section>
+      <!-- End Visi Misi -->
 
-        <!-- FAQ -->
-         <section id="faq" class="faq">
-            <h2>Frequently Asked Questions</h2>
-            <div class="container">
-                <!-- colum Left -->
-                <div class="model-rh">
-                <!-- circle blur top left -->
-                <svg class="circle-blur-t-l" width="407" height="410" viewBox="0 0 407 410" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g filter="url(#filter0_f_91_268)">
-                <ellipse cx="196.5" cy="205" rx="110.5" ry="105" fill="#68F263"/>
+      <!-- Why Us Section -->
+      <section class="why-us">
+        <h2>Mengapa Kami</h2>
+
+        <div class="container">
+          <!-- colum left -->
+          <div class="model-wu">
+            <!-- big circle top left -->
+            <svg
+              class="big-circle"
+              width="159"
+              height="159"
+              viewBox="0 0 159 159"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                opacity="0.25"
+                cx="79.5"
+                cy="79.5"
+                r="79.5"
+                fill="#47E642"
+              />
+            </svg>
+
+            <!-- model -->
+            <div class="model-bg">
+              <!-- Circle Blur -->
+              <svg
+                class="circle-blur"
+                width="609"
+                height="679"
+                viewBox="0 0 609 679"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g filter="url(#filter0_f_89_169)">
+                  <circle cx="269.5" cy="339.5" r="139.5" fill="#1FCD1A" />
                 </g>
                 <defs>
-                <filter id="filter0_f_91_268" x="-14" y="0" width="421" height="410" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_91_268"/>
-                </filter>
+                  <filter
+                    id="filter0_f_89_169"
+                    x="-70"
+                    y="0"
+                    width="679"
+                    height="679"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="BackgroundImageFix"
+                      result="shape"
+                    />
+                    <feGaussianBlur
+                      stdDeviation="100"
+                      result="effect1_foregroundBlur_89_169"
+                    />
+                  </filter>
                 </defs>
-                </svg>
-                <div class="model-bg">
-                    <!-- bg circle -->
-
-                    <!-- rh model -->
-                     <img src="./assets/images/model-images/model-3.webp" alt="Sepasang mahasiswa gembira dengan laptop Hp berwarna merah">
-                </div>
-                <!-- circle blur bottom right -->
-                <svg class="circle-clur-b-r" width="323" height="272" viewBox="0 0 323 272" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g filter="url(#filter0_f_109_136)">
-                <circle cx="161.5" cy="161.5" r="61.5" fill="#68F263"/>
-                </g>
-                <defs>
-                <filter id="filter0_f_109_136" x="0" y="0" width="323" height="323" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_109_136"/>
-                </filter>
-                </defs>
-                </svg>
+              </svg>
+              <!-- triangle -->
+              <svg
+                class="bg-triangle"
+                width="490"
+                height="490"
+                viewBox="0 0 490 490"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M489.236 437.965C489.985 466.104 467.368 489.315 439.219 489.295L50.2049 489.023C5.98804 488.992 -16.4289 435.797 14.4296 404.129L393.095 15.5247C423.953 -16.1437 477.711 4.8877 478.888 49.0889L489.236 437.965Z"
+                  fill="#47E642"
+                />
+              </svg>
+              <!-- image model -->
+              <img
+                src="./assets/images/model-images/model-2.webp"
+                alt="Mahasiswa menunjuk kearah benefit"
+              />
             </div>
 
-            <!-- colum right -->
-            <div class="accor-container">
-                <div class="accor-item">
-                    <button id="accor-btn" class="accor-btn">
-                        Apakah kampus ini membebaskan uang gedung?
-                        <!-- icon open and close + & - -->
-                     <div class="icn-accor">
-                        <img class="icn-plus" src="./assets/images/icons/plus-btn.svg" alt="icon tombol untuk membuka deskripsi jawaban">
-                        <img class="icn-minus" src="./assets/images/icons/minus-btn.svg" alt="icon tombol untuk menutup deskripsi jawaban">
-                    </div>
-                    </button>
-                   
-
-                    <!-- According descriptions -->
-                    <div class="accor-description">
-                    <p>Tidak ada. Kampus kami 100% bebas Biaya Pengembangan Gedung (Uang Pangkal). Kami berkomitmen agar investasi pendidikan Anda terfokus sepenuhnya pada kualitas akademik dan fasilitas pendukung, tanpa ada biaya tersembunyi.</p>
-                    </div>
-                </div>
-
-                <!-- question 2 -->
-                <div class="accor-item">
-                    <button id="accor-btn" class="accor-btn">
-                       Bagaimana cara mendaftar dikampus ini?
-                    <div class="icn-accor">
-                        <img class="icn-plus" src="./assets/images/icons/plus-btn.svg" alt="icon tombol untuk membuka deskripsi jawaban">
-                        <img class="icn-minus" src="./assets/images/icons/minus-btn.svg" alt="icon tombol untuk menutup deskripsi jawaban">
-                    </div>
-                    </button>
-                    <!-- icon open and close + & - -->
-                    
-                    <!-- According descriptions -->
-                    <div class="accor-description">
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae veniam, illum iusto debitis itaque reprehenderit asperiores voluptatem corporis, porro necessitatibus possimus vel praesentium eius. Numquam, iste corrupti. Aperiam, id dicta?</p>
-                    </div>
-                </div>
-
-                <!-- question 3 -->
-                <div class="accor-item">
-                    <button id="accor-btn" class="accor-btn">
-                       Jenis beasiswa apa saja yang tersedia?
-                    
-                    <!-- icon open and close + & - -->
-                    <div class="icn-accor">
-                        <img class="icn-plus" src="./assets/images/icons/plus-btn.svg" alt="icon tombol untuk membuka deskripsi jawaban">
-                        <img class="icn-minus" src="./assets/images/icons/minus-btn.svg" alt="icon tombol untuk menutup deskripsi jawaban">
-                    </div>
-
-                    </button>
-                    <!-- According descriptions -->
-                    <div class="accor-description">
-                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam laboriosam neque quos. Et soluta hic quisquam aspernatur exercitationem quibusdam minima.</p>
-                    </div>
-                </div>
-
-                <!-- question 4 -->
-                <div class="accor-item">
-                    <button id="accor-btn" class="accor-btn">
-                        Persayaratan apa yang harus dipersiapkan?
-                        <!-- icon open and close + & - -->
-                    <div class="icn-accor">
-                        <img class="icn-plus" src="./assets/images/icons/plus-btn.svg" alt="icon tombol untuk membuka deskripsi jawaban">
-                        <img class="icn-minus" src="./assets/images/icons/minus-btn.svg" alt="icon tombol untuk menutup deskripsi jawaban">
-                    </div>
-                    </button>
-                   
-                    <!-- According descriptions -->
-                    <div class="accor-description">
-                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam distinctio, minima maxime vero tempora labore! Maiores error alias eos nisi nam magnam maxime esse ab.</p>
-                    </div>
-                </div>
-
-                <!-- question 5 -->
-                <div class="accor-item">
-                    <button id="accor-btn" class="accor-btn">
-                    Apakkah bisa mendaftar online?
-                     <!-- icon open and close + & - -->
-                    <div class="icn-accor">
-                        <img class="icn-plus" src="./assets/images/icons/plus-btn.svg" alt="icon tombol untuk membuka deskripsi jawaban">
-                        <img class="icn-minus" src="./assets/images/icons/minus-btn.svg" alt="icon tombol untuk menutup deskripsi jawaban">
-                    </div>
-                </button>
-                   
-                    <!-- According descriptions -->
-                    <div class="accor-description">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ut quis ea, odit alias corrupti.</p>
-                    </div>
-                </div>
-
-                <!-- question 6 -->
-                <div class="accor-item">
-                    <button id="accor-btn" class="accor-btn">
-                    Apakkah tersedia asrama di kampus?
-                    <!-- icon open and close + & - -->
-                    <div class="icn-accor">
-                        <img class="icn-plus" src="./assets/images/icons/plus-btn.svg" alt="icon tombol untuk membuka deskripsi jawaban">
-                        <img class="icn-minus" src="./assets/images/icons/minus-btn.svg" alt="icon tombol untuk menutup deskripsi jawaban">
-                    </div>
-                </button>
-                    
-                    <!-- According descriptions -->
-                    <div class="accor-description">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ut quis ea, odit alias corrupti.</p>
-                    </div>
-                </div>
+            <!-- sml circle bottom right -->
+            <svg
+              class="sml-circle"
+              width="109"
+              height="109"
+              viewBox="0 0 109 109"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                opacity="0.2"
+                cx="54.5"
+                cy="54.5"
+                r="54.5"
+                fill="#47E642"
+              />
+            </svg>
+          </div>
+          <!-- colum right -->
+          <div class="points">
+            <!-- Point 1 -->
+            <div class="point">
+              <div class="description">
+                <svg
+                  class="icn-point"
+                  width="54"
+                  height="55"
+                  viewBox="0 0 54 55"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="27" cy="27.3992" r="27" fill="#68F263" />
+                  <g filter="url(#filter0_d_89_144)">
+                    <path
+                      d="M12.1504 40.4705H41.8496C42.0241 40.4705 42.1683 40.5284 42.3057 40.6648C42.4427 40.8009 42.4999 40.9423 42.5 41.113V42.8992H11.5V41.113C11.5001 40.9423 11.5573 40.8009 11.6943 40.6648C11.8317 40.5284 11.9759 40.4705 12.1504 40.4705ZM19.0332 23.3279V37.0417H22.167V23.3279H25.4336V37.0417H28.5664V23.3279H31.833V37.0417H34.9668V23.3279H38.2334V37.0417H39.7168C39.8912 37.0418 40.0354 37.0996 40.1729 37.2361C40.31 37.3723 40.3662 37.5144 40.3662 37.6853V38.3279H13.6338V37.6853C13.6338 37.5144 13.69 37.3723 13.8271 37.2361C13.9646 37.0996 14.1088 37.0418 14.2832 37.0417H15.7666V23.3279H19.0332ZM42.5 18.5857V20.0417H40.3662V20.5417C40.3662 20.7126 40.31 20.8548 40.1729 20.991C40.0354 21.1274 39.8912 21.1853 39.7168 21.1853H14.2832C14.1088 21.1853 13.9646 21.1274 13.8271 20.991C13.69 20.8548 13.6338 20.7126 13.6338 20.5417V20.0417H11.5V18.5857L27 11.9431L42.5 18.5857Z"
+                      fill="#1FCD1A"
+                      stroke="#146912"
+                    />
+                  </g>
+                  <defs>
+                    <filter
+                      id="filter0_d_89_144"
+                      x="9"
+                      y="11.3992"
+                      width="40"
+                      height="40"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset dx="2" dy="4" />
+                      <feGaussianBlur stdDeviation="2" />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="BackgroundImageFix"
+                        result="effect1_dropShadow_89_144"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="effect1_dropShadow_89_144"
+                        result="shape"
+                      />
+                    </filter>
+                  </defs>
+                </svg>
+                <h4>Tanpa Uang Gedung</h4>
+              </div>
+              <p>
+                Tanpa Biaya Pengembangan Gedung (Uang Pangkal/Gedung). Fokuskan
+                dana studi Anda langsung pada pengembangan akademik.
+              </p>
             </div>
-        </section>
-        <!-- End FAQ -->
 
-        <footer>
-            <!-- img institues -->
-            <div class="institues">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+            <!-- Point 2 -->
+            <div class="point">
+              <div class="description">
+                <svg
+                  class="icn-point"
+                  width="54"
+                  height="54"
+                  viewBox="0 0 53 54"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="26.2594"
+                    cy="27.0001"
+                    r="26.2594"
+                    fill="#68F263"
+                  />
+                  <g filter="url(#filter0_d_89_154)">
+                    <mask id="path-2-inside-1_89_154" fill="white">
+                      <path
+                        d="M26.4332 12.2292L10.6274 22.0765L26.4332 31.9238L39.3651 23.8654V35.2062H42.2389V22.0765M16.375 28.9368V35.5016L26.4332 41.771L36.4913 35.5016V28.9368L26.4332 35.2062L16.375 28.9368Z"
+                      />
+                    </mask>
+                    <path
+                      d="M26.4332 12.2292L10.6274 22.0765L26.4332 31.9238L39.3651 23.8654V35.2062H42.2389V22.0765M16.375 28.9368V35.5016L26.4332 41.771L36.4913 35.5016V28.9368L26.4332 35.2062L16.375 28.9368Z"
+                      fill="#1FCD1A"
+                    />
+                    <path
+                      d="M10.6274 22.0765L10.0987 21.2278L8.73633 22.0765L10.0987 22.9253L10.6274 22.0765ZM26.4332 31.9238L25.9044 32.7725L26.4332 33.102L26.962 32.7725L26.4332 31.9238ZM39.3651 23.8654H40.3651V22.064L38.8362 23.0167L39.3651 23.8654ZM39.3651 35.2062H38.3651V36.2062H39.3651V35.2062ZM42.2389 35.2062V36.2062H43.2389V35.2062H42.2389ZM16.375 28.9368L16.9039 28.0881L15.375 27.1351V28.9368H16.375ZM16.375 35.5016H15.375V36.0567L15.846 36.3503L16.375 35.5016ZM26.4332 41.771L25.9042 42.6197L26.4332 42.9494L26.9621 42.6197L26.4332 41.771ZM36.4913 35.5016L37.0203 36.3503L37.4913 36.0567V35.5016H36.4913ZM36.4913 28.9368H37.4913V27.1351L35.9624 28.0881L36.4913 28.9368ZM26.4332 35.2062L25.9042 36.0548L26.4332 36.3846L26.9621 36.0548L26.4332 35.2062ZM26.4332 12.2292L25.9044 11.3805L10.0987 21.2278L10.6274 22.0765L11.1562 22.9253L26.9619 13.078L26.4332 12.2292ZM10.6274 22.0765L10.0987 22.9253L25.9044 32.7725L26.4332 31.9238L26.9619 31.075L11.1562 21.2278L10.6274 22.0765ZM26.4332 31.9238L26.962 32.7725L39.894 24.7141L39.3651 23.8654L38.8362 23.0167L25.9043 31.0751L26.4332 31.9238ZM39.3651 23.8654H38.3651V35.2062H39.3651H40.3651V23.8654H39.3651ZM39.3651 35.2062V36.2062H42.2389V35.2062V34.2062H39.3651V35.2062ZM42.2389 35.2062H43.2389V22.0765H42.2389H41.2389V35.2062H42.2389ZM16.375 28.9368H15.375V35.5016H16.375H17.375V28.9368H16.375ZM16.375 35.5016L15.846 36.3503L25.9042 42.6197L26.4332 41.771L26.9621 40.9224L16.9039 34.653L16.375 35.5016ZM26.4332 41.771L26.9621 42.6197L37.0203 36.3503L36.4913 35.5016L35.9624 34.653L25.9042 40.9224L26.4332 41.771ZM36.4913 35.5016H37.4913V28.9368H36.4913H35.4913V35.5016H36.4913ZM36.4913 28.9368L35.9624 28.0881L25.9042 34.3576L26.4332 35.2062L26.9621 36.0548L37.0203 29.7854L36.4913 28.9368ZM26.4332 35.2062L26.9621 34.3576L16.9039 28.0881L16.375 28.9368L15.846 29.7854L25.9042 36.0548L26.4332 35.2062Z"
+                      fill="#146912"
+                      mask="url(#path-2-inside-1_89_154)"
+                    />
+                  </g>
+                  <defs>
+                    <filter
+                      id="filter0_d_89_154"
+                      x="7.19067"
+                      y="7.30566"
+                      width="42.4851"
+                      height="47.3892"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset dx="2" dy="4" />
+                      <feGaussianBlur stdDeviation="2" />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="BackgroundImageFix"
+                        result="effect1_dropShadow_89_154"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="effect1_dropShadow_89_154"
+                        result="shape"
+                      />
+                    </filter>
+                  </defs>
+                </svg>
+                <h4>Akses Beasiswa Luas</h4>
+              </div>
+              <p>
+                Jaringan Beasiswa Luas. Kami secara proaktif menghubungkan Anda
+                dengan berbagai sumber pendanaan. Raih bantuan studi maksimal
+                dan fokus penuh pada pencapaian akademik.
+              </p>
+            </div>
+
+            <!-- Point 3 -->
+            <div class="point">
+              <div class="description">
+                <svg
+                  class="icn-point"
+                  width="52"
+                  height="54"
+                  viewBox="0 0 52 54"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <ellipse
+                    cx="25.6419"
+                    cy="27"
+                    rx="25.6419"
+                    ry="27"
+                    fill="#68F263"
+                  />
+                  <g filter="url(#filter0_d_89_158)">
+                    <path
+                      d="M17.7913 18.1667H38.5579C39.5138 18.1667 40.3372 18.996 40.3372 20.0671V31.2664C40.3372 32.3375 39.5139 33.1667 38.5579 33.1667H36.5383V35.2664C36.5383 35.5192 36.491 35.7694 36.3997 36.0017C36.3082 36.2341 36.1746 36.4445 36.0081 36.6199C35.8417 36.795 35.6457 36.9328 35.4319 37.0261C35.2179 37.1195 34.989 37.1667 34.759 37.1667H13.9924C13.5292 37.1667 13.0793 36.9734 12.7434 36.6199C12.4067 36.2653 12.2131 35.7784 12.2131 35.2664V24.0671C12.2131 23.5551 12.4067 23.0682 12.7434 22.7136C13.0793 22.3601 13.5292 22.1667 13.9924 22.1667H16.012V20.0671C16.012 18.996 16.8353 18.1667 17.7913 18.1667ZM24.3762 26.4998C23.5634 26.4998 22.7894 26.8408 22.2229 27.4373C21.6573 28.0329 21.343 28.835 21.343 29.6667C21.343 30.4985 21.6573 31.3006 22.2229 31.8962C22.7894 32.4927 23.5634 32.8337 24.3762 32.8337C25.1889 32.8336 25.9632 32.4926 26.5295 31.8962C27.0949 31.3007 27.4084 30.4983 27.4084 29.6667L27.3938 29.3562C27.326 28.6376 27.0242 27.9583 26.5295 27.4373C25.9632 26.8409 25.1889 26.4999 24.3762 26.4998ZM17.5442 22.1667H34.759C34.989 22.1667 35.2179 22.214 35.4319 22.3074C35.6458 22.4007 35.8417 22.5385 36.0081 22.7136C36.1746 22.889 36.3082 23.0994 36.3997 23.3318C36.491 23.5641 36.5383 23.8143 36.5383 24.0671V31.4998H38.8049V19.8337H17.5442V22.1667Z"
+                      fill="#1FCD1A"
+                      stroke="#146912"
+                    />
+                  </g>
+                  <defs>
+                    <filter
+                      id="filter0_d_89_158"
+                      x="8.44678"
+                      y="11"
+                      width="38.3904"
+                      height="40"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset dx="2" dy="4" />
+                      <feGaussianBlur stdDeviation="2" />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="BackgroundImageFix"
+                        result="effect1_dropShadow_89_158"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="effect1_dropShadow_89_158"
+                        result="shape"
+                      />
+                    </filter>
+                  </defs>
+                </svg>
+                <h4>Biaya Kuliah Tetap</h4>
+              </div>
+              <p>
+                Biaya Kuliah Tetap. Struktur biaya yang konsisten selama masa
+                studi normal, menghilangkan kekhawatiran fluktuasi biaya
+                tahunan. Fokus pada prestasi tanpa gangguan finansial.
+              </p>
+            </div>
+
+            <!-- Point 4 -->
+            <div class="point">
+              <div class="description">
+                <svg
+                  class="icn-point"
+                  width="52"
+                  height="54"
+                  viewBox="0 0 52 54"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <ellipse
+                    cx="25.6473"
+                    cy="27"
+                    rx="25.6473"
+                    ry="27"
+                    fill="#68F263"
+                  />
+                  <path
+                    d="M30.8704 28.8C32.3221 28.8042 34.5181 29.1723 36.343 29.9026C37.2604 30.2697 38.053 30.7162 38.6077 31.2278C39.1587 31.7361 39.4417 32.2748 39.4417 32.8479V35.5969H32.6448V32.8479C32.6448 31.1896 31.9327 29.8539 30.8704 28.8ZM20.4495 28.8C21.9009 28.8001 24.1121 29.1681 25.9475 29.9026C26.8647 30.2697 27.6565 30.7163 28.2112 31.2278C28.7624 31.7362 29.0461 32.2747 29.0461 32.8479V35.5969H11.8528V32.8479C11.8528 32.2747 12.1365 31.7362 12.6877 31.2278C13.2424 30.7162 14.0341 30.2697 14.9514 29.9026C16.7869 29.1681 18.998 28.8 20.4495 28.8ZM20.4495 18.4036C22.3282 18.4036 23.8352 19.9189 23.8352 21.802C23.8352 23.6852 22.3283 25.2004 20.4495 25.2004C18.5684 25.2004 17.051 23.683 17.051 21.802C17.0511 19.921 18.5685 18.4036 20.4495 18.4036ZM30.845 18.4036C32.7238 18.4036 34.2307 19.9188 34.2307 21.802C34.2307 23.6852 32.7238 25.2004 30.845 25.2004C28.9641 25.2002 27.4465 23.6829 27.4465 21.802C27.4466 19.9211 28.9641 18.4038 30.845 18.4036Z"
+                    fill="#1FCD1A"
+                    stroke="#146912"
+                  />
+                </svg>
+
+                <h4>Pemagangan</h4>
+              </div>
+              <p>
+                Karier Dimulai Sekarang. Skema Magang Terintegrasi yang
+                fleksibel. Raih pengalaman kerja, jaringan, dan potensi
+                penghasilan tanpa mengorbankan kuliah Anda.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Why Us Section -->
+
+      <!-- Major -->
+      <section id="prodi" class="major">
+        <!-- Devider direction to top -->
+        <div class="devider-shape-to-top">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+
+        <h2>Program Studi</h2>
+        <div class="container">
+          <!-- TRK -->
+          <div class="TRK">
+            <img
+              src="./assets/images/model-images/supplay-chain.webp"
+              alt="Kelas Praktik Teknik Rekayasa Komputer"
+            />
+            <div class="details">
+              <svg
+                class="icn-major"
+                width="54"
+                height="54"
+                viewBox="0 0 54 54"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="27" cy="27" r="27" fill="#68F263" />
+                <path
+                  d="M41.1663 36.833V38.5H12.8333V36.833H41.1663ZM37.6663 15.5C38.2658 15.5 38.7678 15.708 39.1975 16.1377C39.627 16.5673 39.834 17.0679 39.8333 17.666V32.333C39.8333 32.9328 39.6255 33.4346 39.1965 33.8643C38.7681 34.2933 38.2675 34.5007 37.6672 34.5H16.3333C15.7335 34.5 15.2326 34.2928 14.804 33.8643C14.3753 33.4356 14.1671 32.934 14.1663 32.333V17.667C14.1663 17.0675 14.3745 16.5664 14.804 16.1377C15.1801 15.7623 15.6106 15.556 16.1135 15.5098L16.3342 15.5H37.6663ZM15.8333 32.833H38.1663V17.167H15.8333V32.833Z"
+                  fill="#1FCD1A"
+                  stroke="#146912"
+                />
+              </svg>
+              <h6>Teknik Rekayasa Komputer</h6>
+              <p>
+                Integrasi Hardware & Software. Rancang dan bangun sistem
+                komputasi modern, mulai dari mikroprosesor hingga jaringan
+                cerdas (Intelligent Systems).
+              </p>
+            </div>
+          </div>
+
+          <!-- TRL -->
+          <div class="TRL">
+            <img
+              src="./assets/images/model-images/supplay-chain.webp"
+              alt="Kelas Praktik Teknik Rekayasa Logistik"
+            />
+            <div class="details">
+              <svg
+                class="icn-major"
+                width="54"
+                height="54"
+                viewBox="0 0 54 54"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="27" cy="27" r="27" fill="#68F263" />
+                <path
+                  d="M25.6665 25.4019V39.3237C25.6577 39.3203 25.648 39.3175 25.6392 39.314H25.6382L15.6333 35.311C15.2006 35.138 14.8293 34.8394 14.5679 34.4536C14.3065 34.0677 14.1668 33.6121 14.1665 33.146V20.853C14.1665 20.8361 14.1671 20.8191 14.1675 20.8022L25.6665 25.4019ZM39.8335 20.854V33.146C39.8333 33.6121 39.6935 34.0677 39.4321 34.4536C39.1707 34.8397 38.7987 35.1389 38.3657 35.312L28.3618 39.313H28.3608C28.352 39.3165 28.3424 39.3183 28.3335 39.3218V25.4019L39.8315 20.8022C39.8319 20.8195 39.8335 20.8367 39.8335 20.854ZM30.8296 21.5317L26.9995 23.064L15.8452 18.6021L19.6812 17.0679L30.8296 21.5317ZM25.6382 14.686C26.5123 14.3364 27.4877 14.3354 28.3618 14.6851L38.1519 18.6021L34.4175 20.0962L23.271 15.6313L25.6382 14.6851V14.686Z"
+                  fill="#1FCD1A"
+                  stroke="#146912"
+                />
+              </svg>
+              <h6>Teknik Rekayasa Logistik</h6>
+              <p>
+                Kuasai Optimalisasi Rantai Pasok Global. Pelajari manajemen
+                aliran material, informasi, dan finansial untuk menciptakan
+                sistem distribusi paling efisien dan tepat waktu di dunia.
+              </p>
+            </div>
+          </div>
+
+          <!-- TRM -->
+          <div class="TRM">
+            <img
+              src="./assets/images/model-images/mechanical-engineering.webp"
+              alt="Kelas Praktik Teknik Rekayasa Manufaktur"
+            />
+            <div class="details">
+              <svg
+                class="icn-major"
+                width="54"
+                height="54"
+                viewBox="0 0 54 54"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="27" cy="27" r="27" fill="#68F263" />
+                <path
+                  d="M24.3333 14.1667H29.6682C29.7093 14.1667 29.749 14.1813 29.7805 14.2078C29.8109 14.2333 29.8314 14.2685 29.8391 14.3074L30.3313 17.8289L30.3713 18.1179L30.6418 18.2244C31.4271 18.536 32.1087 18.9627 32.7805 19.4666L33.0051 19.6355L33.2668 19.531L36.5862 18.197L36.5891 18.196C36.615 18.1855 36.6518 18.1833 36.6907 18.197C36.7283 18.2103 36.7575 18.235 36.7747 18.2664L36.7805 18.2771L39.4407 22.8787V22.8796C39.4902 22.9705 39.4614 23.0575 39.4124 23.0984L36.6008 25.2712L36.3772 25.4441L36.4104 25.7253C36.4629 26.1716 36.5002 26.5889 36.5002 26.9998C36.5002 27.4101 36.4626 27.8139 36.4104 28.2312L36.3752 28.5115L36.5979 28.6863L39.4104 30.8992C39.4483 30.9291 39.4752 30.9867 39.4651 31.0525L39.4407 31.1208L36.7805 35.7234L36.7747 35.7341C36.7601 35.7608 36.7347 35.7832 36.6956 35.7966C36.6538 35.8109 36.6079 35.8097 36.5715 35.7966L33.2678 34.4568L33.0022 34.3494L32.7756 34.5242C32.1112 35.0353 31.4287 35.4509 30.636 35.7781L30.3713 35.8875L30.3313 36.1707L29.8401 39.6912C29.8271 39.769 29.7562 39.8337 29.6663 39.8337H24.3333C24.2452 39.8337 24.1754 39.7717 24.1604 39.696L23.6682 36.1707L23.6282 35.8826L23.3577 35.7751C22.5731 35.4638 21.8934 35.0384 21.2249 34.5242L20.9973 34.3494L20.7317 34.4568L17.429 35.7966C17.3926 35.8098 17.3468 35.8109 17.3049 35.7966C17.2658 35.7833 17.2405 35.7608 17.2258 35.7341L17.22 35.7234L14.553 31.1101L14.55 31.1062L14.5305 31.0515C14.5206 30.9958 14.5413 30.9384 14.5891 30.9001L17.4026 28.6863L17.6243 28.5115L17.5891 28.2312C17.537 27.8139 17.5002 27.41 17.5002 26.9998C17.5003 26.5889 17.5376 26.1716 17.5901 25.7253L17.6233 25.4441L17.3987 25.2712L14.5862 23.0974C14.525 23.0461 14.5098 22.9625 14.55 22.8943L14.553 22.8904L17.22 18.2771L17.2258 18.2664C17.243 18.2349 17.2721 18.2103 17.3098 18.197C17.3485 18.1835 17.3846 18.1856 17.4104 18.196L17.4133 18.197L20.7336 19.531L20.9944 19.6355L21.22 19.4666C21.8918 18.9627 22.5725 18.5359 23.3577 18.2244L23.6282 18.1179L23.6682 17.8289L24.1604 14.3044C24.1753 14.2286 24.2451 14.1668 24.3333 14.1667ZM27.0002 21.8337C25.6301 21.8337 24.3158 22.3777 23.3469 23.3464C22.3781 24.3153 21.8333 25.6296 21.8333 26.9998C21.8333 28.37 22.378 29.6841 23.3469 30.6531C24.3159 31.622 25.63 32.1667 27.0002 32.1667C28.3705 32.1667 29.6847 31.622 30.6536 30.6531C31.6223 29.6842 32.1663 28.3699 32.1663 26.9998C32.1662 25.6296 31.6224 24.3153 30.6536 23.3464C29.6847 22.3776 28.3704 21.8338 27.0002 21.8337Z"
+                  fill="#1FCD1A"
+                  stroke="#146912"
+                />
+              </svg>
+              <h6>Teknik Rekayasa Manufaktur</h6>
+              <p>
+                Spesialisasi Otomasi & Industri 4.0. Kuasai robotika dan IoT
+                untuk perencanaan dan pengendalian proses produksi massal,
+                menciptakan produk dengan kualitas dan kuantitas optimal.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- devider on the bottom -->
+        <div class="devider-shape-to-btm">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="container">
+          <!-- colum Left -->
+          <div class="model-rh">
+            <!-- circle blur top left -->
+            <svg
+              class="circle-blur-t-l"
+              width="407"
+              height="410"
+              viewBox="0 0 407 410"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g filter="url(#filter0_f_91_268)">
+                <ellipse
+                  cx="196.5"
+                  cy="205"
+                  rx="110.5"
+                  ry="105"
+                  fill="#68F263"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_f_91_268"
+                  x="-14"
+                  y="0"
+                  width="421"
+                  height="410"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                  />
+                  <feGaussianBlur
+                    stdDeviation="50"
+                    result="effect1_foregroundBlur_91_268"
+                  />
+                </filter>
+              </defs>
+            </svg>
+            <div class="model-bg">
+              <!-- bg circle -->
+
+              <!-- rh model -->
+              <img
+                src="./assets/images/model-images/model-3.webp"
+                alt="Sepasang mahasiswa gembira dengan laptop Hp berwarna merah"
+              />
+            </div>
+            <!-- circle blur bottom right -->
+            <svg
+              class="circle-clur-b-r"
+              width="323"
+              height="272"
+              viewBox="0 0 323 272"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g filter="url(#filter0_f_109_136)">
+                <circle cx="161.5" cy="161.5" r="61.5" fill="#68F263" />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_f_109_136"
+                  x="0"
+                  y="0"
+                  width="323"
+                  height="323"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                  />
+                  <feGaussianBlur
+                    stdDeviation="50"
+                    result="effect1_foregroundBlur_109_136"
+                  />
+                </filter>
+              </defs>
+            </svg>
+          </div>
+
+          <!-- colum right -->
+          <div class="accor-container">
+            <div class="accor-item">
+              <button class="accor-btn">
+                Apakah kampus ini membebaskan uang gedung?
+                <!-- icon open and close + & - -->
+                <div class="icn-accor">
+                  <img
+                    class="icn-plus"
+                    src="./assets/images/icons/icon-plus-btn.svg"
+                    alt="icon tombol untuk membuka deskripsi jawaban"
+                  />
+                  <img
+                    class="icn-minus"
+                    src="./assets/images/icons/icon-minus-btn.svg"
+                    alt="icon tombol untuk menutup deskripsi jawaban"
+                  />
+                </div>
+              </button>
+
+              <!-- According descriptions -->
+              <div class="accor-description">
+                <p>
+                  Tidak ada. Kampus kami 100% bebas Biaya Pengembangan Gedung
+                  (Uang Pangkal). Kami berkomitmen agar investasi pendidikan
+                  Anda terfokus sepenuhnya pada kualitas akademik dan fasilitas
+                  pendukung, tanpa ada biaya tersembunyi.
+                </p>
+              </div>
+            </div>
+
+            <!-- question 2 -->
+            <div class="accor-item">
+              <button class="accor-btn">
+                Bagaimana cara mendaftar dikampus ini?
+                <div class="icn-accor">
+                  <img
+                    class="icn-plus"
+                    src="./assets/images/icons/icon-plus-btn.svg"
+                    alt="icon tombol untuk membuka deskripsi jawaban"
+                  />
+                  <img
+                    class="icn-minus"
+                    src="./assets/images/icons/icon-minus-btn.svg"
+                    alt="icon tombol untuk menutup deskripsi jawaban"
+                  />
+                </div>
+              </button>
+              <!-- icon open and close + & - -->
+
+              <!-- According descriptions -->
+              <div class="accor-description">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                  veniam, illum iusto debitis itaque reprehenderit asperiores
+                  voluptatem corporis, porro necessitatibus possimus vel
+                  praesentium eius. Numquam, iste corrupti. Aperiam, id dicta?
+                </p>
+              </div>
+            </div>
+
+            <!-- question 3 -->
+            <div class="accor-item">
+              <button class="accor-btn">
+                Jenis beasiswa apa saja yang tersedia?
+
+                <!-- icon open and close + & - -->
+                <div class="icn-accor">
+                  <img
+                    class="icn-plus"
+                    src="./assets/images/icons/icon-plus-btn.svg"
+                    alt="icon tombol untuk membuka deskripsi jawaban"
+                  />
+                  <img
+                    class="icn-minus"
+                    src="./assets/images/icons/icon-minus-btn.svg"
+                    alt="icon tombol untuk menutup deskripsi jawaban"
+                  />
+                </div>
+              </button>
+              <!-- According descriptions -->
+              <div class="accor-description">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Numquam laboriosam neque quos. Et soluta hic quisquam
+                  aspernatur exercitationem quibusdam minima.
+                </p>
+              </div>
+            </div>
+
+            <!-- question 4 -->
+            <div class="accor-item">
+              <button class="accor-btn">
+                Persayaratan apa yang harus dipersiapkan?
+                <!-- icon open and close + & - -->
+                <div class="icn-accor">
+                  <img
+                    class="icn-plus"
+                    src="./assets/images/icons/icon-plus-btn.svg"
+                    alt="icon tombol untuk membuka deskripsi jawaban"
+                  />
+                  <img
+                    class="icn-minus"
+                    src="./assets/images/icons/icon-minus-btn.svg"
+                    alt="icon tombol untuk menutup deskripsi jawaban"
+                  />
+                </div>
+              </button>
+
+              <!-- According descriptions -->
+              <div class="accor-description">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ipsam distinctio, minima maxime vero tempora labore! Maiores
+                  error alias eos nisi nam magnam maxime esse ab.
+                </p>
+              </div>
+            </div>
+
+            <!-- question 5 -->
+            <div class="accor-item">
+              <button class="accor-btn">
+                Apakkah bisa mendaftar online?
+                <!-- icon open and close + & - -->
+                <div class="icn-accor">
+                  <img
+                    class="icn-plus"
+                    src="./assets/images/icons/icon-plus-btn.svg"
+                    alt="icon tombol untuk membuka deskripsi jawaban"
+                  />
+                  <img
+                    class="icn-minus"
+                    src="./assets/images/icons/icon-minus-btn.svg"
+                    alt="icon tombol untuk menutup deskripsi jawaban"
+                  />
+                </div>
+              </button>
+
+              <!-- According descriptions -->
+              <div class="accor-description">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequatur ut quis ea, odit alias corrupti.
+                </p>
+              </div>
+            </div>
+
+            <!-- question 6 -->
+            <div class="accor-item">
+              <button class="accor-btn">
+                Apakkah tersedia asrama di kampus?
+                <!-- icon open and close + & - -->
+                <div class="icn-accor">
+                  <img
+                    class="icn-plus"
+                    src="./assets/images/icons/icon-plus-btn.svg"
+                    alt="icon tombol untuk membuka deskripsi jawaban"
+                  />
+                  <img
+                    class="icn-minus"
+                    src="./assets/images/icons/icon-minus-btn.svg"
+                    alt="icon tombol untuk menutup deskripsi jawaban"
+                  />
+                </div>
+              </button>
+
+              <!-- According descriptions -->
+              <div class="accor-description">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequatur ut quis ea, odit alias corrupti.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End FAQ -->
+
+      <footer>
+        <div class="container">
+          <!-- img institues -->
+          <div class="institues">
+            <img
+              src="./assets/images/logos/Poltek-logo.svg"
+              alt="Logo Politeknik Insan Tazakka"
+            />
+            <img
+              src="./assets/images/logos/l2dikti-logo.svg"
+              alt="Logo l2dikti"
+            />
+            <img
+              src="./assets/images/logos/Diktisaintek-berdampak-logo.svg"
+              alt="Logo Diktisaintek Berdampak"
+            />
+          </div>
+
+          <div class="footer-content">
+            <!-- column left-->
+            <div class="footer-left">
+              <h4>Hubungi Kami</h4>
+              <!-- Phone Number -->
+              <div class="contact contact1">
+                <svg
+                  width="80"
+                  height="80"
+                  viewBox="0 0 80 80"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="40"
+                    cy="40"
+                    r="39"
+                    stroke="#146912"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M40 15.5C44.5087 15.5 48.8324 17.2914 52.0205 20.4795C55.2086 23.6676 57 27.9913 57 32.5V35.5205L57.4287 35.582C61.426 36.1548 64.5 39.5948 64.5 43.75V44.375C64.5 48.5437 60.8947 52.1885 56.6934 51.9951L56.3203 51.9785L56.1982 52.3301C54.413 57.4446 49.8656 60.904 44.9502 61.7803L44.9062 61.7881L44.8652 61.8027C44.3578 61.9884 43.7843 62.0448 43.1592 62.0479C42.8479 62.0494 42.5325 62.0377 42.2109 62.0254C41.8933 62.0132 41.567 62 41.25 62C40.388 62 39.5616 61.6573 38.9521 61.0479C38.3427 60.4384 38 59.612 38 58.75C38 57.888 38.3427 57.0616 38.9521 56.4521C39.5616 55.8427 40.388 55.5 41.25 55.5C42.2908 55.5 43.2592 55.4302 44.1709 55.5762C45.0472 55.7165 45.795 56.05 46.3652 56.8203L46.6104 57.1514L46.9824 56.9736C50.3769 55.3575 53 51.9361 53 47.5V32.5C53 29.0522 51.6304 25.7456 49.1924 23.3076C46.7544 20.8696 43.4478 19.5 40 19.5C36.5522 19.5 33.2456 20.8696 30.8076 23.3076C28.3696 25.7456 27 29.0522 27 32.5V48.125C27 49.1527 26.5919 50.1385 25.8652 50.8652C25.1385 51.5919 24.1527 52 23.125 52C21.1027 52 19.1634 51.1966 17.7334 49.7666C16.3034 48.3366 15.5 46.3973 15.5 44.375V43.75L15.5078 43.3789C15.5906 41.5277 16.2951 39.754 17.5127 38.3477C18.8115 36.8476 20.6075 35.8655 22.5713 35.582L23 35.5205V32.5C23 27.9913 24.7914 23.6676 27.9795 20.4795C31.1676 17.2914 35.4913 15.5 40 15.5Z"
+                    fill="#68F263"
+                    stroke="#146912"
+                  />
+                </svg>
+                <div class="info">
+                  <h6>Nomor Telepon</h6>
+                  <p>(+62) 896-7140-8851</p>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="contact contact2">
+                <svg
+                  width="80"
+                  height="80"
+                  viewBox="0 0 80 80"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="40"
+                    cy="40"
+                    r="39"
+                    stroke="#146912"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M20 20.5H60C62.4739 20.5 64.5 22.5261 64.5 25V55C64.5 57.4739 62.4739 59.5 60 59.5H20C17.5261 59.5 15.5 57.4739 15.5 55L15.5254 25C15.5254 22.5229 17.5294 20.5 20 20.5ZM58.4893 26.2012C58.1417 26.1296 57.7833 26.1293 57.4355 26.2002C57.0953 26.2696 56.7725 26.4065 56.4854 26.6016V26.6006L40 36.9102L23.5146 26.6006L23.5137 26.6016C23.2267 26.4067 22.9045 26.2695 22.5645 26.2002C22.2167 26.1293 21.8583 26.1296 21.5107 26.2012C21.1629 26.2729 20.8326 26.4144 20.541 26.6172C20.2496 26.8199 20.0026 27.0798 19.8145 27.3809C19.6262 27.682 19.5008 28.0182 19.4463 28.3691C19.3918 28.7199 19.4092 29.078 19.4971 29.4219C19.585 29.7659 19.7417 30.0894 19.958 30.3711C20.1694 30.6464 20.4344 30.8753 20.7354 31.0479V31.0488L38.4102 42.0986C39.3723 42.7 40.6277 42.7 41.5898 42.0986L59.2646 31.0488L59.2637 31.0479C59.565 30.8752 59.8304 30.6466 60.042 30.3711C60.2583 30.0894 60.415 29.7659 60.5029 29.4219C60.5908 29.078 60.6082 28.7199 60.5537 28.3691C60.4992 28.0182 60.3738 27.682 60.1855 27.3809C59.9974 27.0798 59.7504 26.8199 59.459 26.6172C59.1674 26.4144 58.8371 26.2729 58.4893 26.2012Z"
+                    fill="#68F263"
+                    stroke="#146912"
+                  />
+                </svg>
+                <div class="info">
+                  <h6>Alamat Email</h6>
+                  <p>Poltek@info.ac.id</p>
+                </div>
+              </div>
+
+              <!-- Location -->
+              <div class="contact contact3">
+                <svg
+                  width="80"
+                  height="80"
+                  viewBox="0 0 80 80"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="40"
+                    cy="40"
+                    r="39"
+                    stroke="#146912"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M40 15.5C44.5087 15.5 48.8324 17.2914 52.0205 20.4795C55.2086 23.6676 57 27.9913 57 32.5C57 35.6801 55.9374 39.2777 54.3096 42.9111C52.6847 46.538 50.514 50.1644 48.3359 53.3926C46.1588 56.6193 43.9799 59.4386 42.3457 61.4521C41.5288 62.4586 40.8488 63.2633 40.373 63.8154C40.2299 63.9816 40.1042 64.1241 40 64.2432C39.8958 64.1241 39.7701 63.9816 39.627 63.8154C39.1512 63.2633 38.4712 62.4586 37.6543 61.4521C36.0201 59.4386 33.8412 56.6193 31.6641 53.3926C29.486 50.1644 27.3153 46.538 25.6904 42.9111C24.0626 39.2777 23 35.6801 23 32.5C23 27.9913 24.7914 23.6676 27.9795 20.4795C31.1676 17.2914 35.4913 15.5 40 15.5ZM40 25.75C38.2098 25.75 36.4924 26.4607 35.2266 27.7266C33.9607 28.9924 33.25 30.7098 33.25 32.5C33.25 34.2902 33.9607 36.0076 35.2266 37.2734C36.4924 38.5393 38.2098 39.25 40 39.25C40.8864 39.25 41.7641 39.0755 42.583 38.7363C43.402 38.3971 44.1466 37.9002 44.7734 37.2734C45.4002 36.6466 45.8971 35.902 46.2363 35.083C46.5755 34.2641 46.75 33.3864 46.75 32.5C46.75 30.7098 46.0393 28.9924 44.7734 27.7266C43.5076 26.4607 41.7902 25.75 40 25.75Z"
+                    fill="#68F263"
+                    stroke="#146912"
+                  />
+                </svg>
+                <div class="info">
+                  <h6>Alamat Kampus</h6>
+                  <p>
+                    Jl. Raya Pangulah No.126,Pangulah Utara, Kec. Kota Baru,
+                    Karawang, Jawa Barat 41376, Karawang, Jawa Barat 41374
+                  </p>
+                </div>
+              </div>
             </div>
 
             <!-- column right -->
-             <div class="service">
-                <div class="contact contact1">
-                    <svg></svg>
-                    <div class="info">
-                        <h4></h4>
-                        <p></p>
-                    </div>
+            <div class="footer-right">
+              <!-- social media -->
+              <div class="social-medias">
+                <h4>Media Social</h4>
+                <div class="link-media">
+                  <ul>
+                    <li>
+                      <a href="www.youtube.com/@Politeknikinsantazakka"
+                        ><img
+                          src="./assets/images/icons/icon-youtube.svg"
+                          alt="Icon Youtube"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/poltek_insantazakka"
+                        ><img
+                          src="./assets/images/icons/icon-instagram.svg"
+                          alt="Icon Instagram"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="https://www.tiktok.com/@poltek_insantazakka"
+                        ><img
+                          src="./assets/images/icons/icon-tiktok.svg"
+                          alt="Icon Tiktok"
+                      /></a>
+                    </li>
+                  </ul>
                 </div>
-                <div class="contact contact2">
-                    <svg></svg>
-                    <div class="info">
-                        <h4></h4>
-                        <p></p>
-                    </div>
-                </div>
-                <div class="contact contact3">
-                    <svg></svg>
-                    <div class="info">
-                        <h4></h4>
-                        <p></p>
-                    </div>
-                </div>
-             </div>
-        </footer>
+              </div>
 
+              <!-- Maps -->
+              <div class="maps-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.0828676321466!2d107.46841740359262!3d-6.418346994647176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6973994042ce13%3A0xf0f49a9a6695b11e!2sPoliteknik%20Insan%20Tazakka!5e0!3m2!1sen!2sid!4v1761271679996!5m2!1sen!2sid"
+                  width="400"
+                  height="300"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.0828676321466!2d107.46841740359262!3d-6.418346994647176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6973994042ce13%3A0xf0f49a9a6695b11e!2sPoliteknik%20Insan%20Tazakka!5e0!3m2!1sen!2sid!4v1761271679996!5m2!1sen!2sid" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="copyright">
+          Copyright &copy; 2025 - POLTEK IT - All Right Reserved
+        </p>
+      </footer>
     </main>
     <script src="./javascript/script.js" type="module"></script>
-</body>
+  </body>
 </html>
