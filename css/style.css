@@ -3,6 +3,7 @@
 @import url("./global/fonts.css");
 @import url("./global/buttons.css");
 @import url("./global/decorations.css");
+@import url("./global/animation.css");
 
 /* components */
 @import url("./components/navigation.css");
