@@ -1,0 +1,106 @@
+footer {
+  background-color: var(--screaming-green-50);
+  padding-top: var(--space-56);
+  margin-top: calc(var(--space-100) * 2);
+  overflow: hidden;
+  /* height: 100vh; */
+}
+
+footer  h4 {
+  font-family: var(--Inter);
+  font-size: var(--fn-inter-h4);
+  font-weight: var(--fw-bold);
+  color: var(--screaming-green-950);
+  margin-top: var(--space-32);
+}
+
+/* Logo Institues */
+.institues {
+  width: fit-content;
+  display: flex;
+  gap: var(--space-32);
+}
+
+.institues img {
+  width: clamp(3rem, 5vw, 4.25rem);
+}
+
+/*Contacts footer-left */
+.footer-left .contact {
+  margin-top: var(--space-40);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-24);
+  width: 80%;
+}
+
+/* information name */
+.info h6 {
+  font-family: var(--Inter);
+  font-size: var(--fn-inter-h6);
+  font-weight: var(--fw-regular);
+  color: var(--white-500);
+}
+
+/* Information Adderss */
+.info p {
+  font-family: var(--Poppins);
+  font-size: var(--fn-poppins-sml);
+  font-weight: var(--fw-regular);
+  color: var(--screaming-green-950);
+  margin-top: var(--space-4);
+}
+
+/* Inforation Icon */
+.footer-left .contact svg {
+  width: clamp(2.5rem, 8vw, 4rem);
+  flex-shrink: 0;
+}
+
+
+/* footer-right */
+/* Social media */
+.link-media ul {
+  margin-block: var(--space-16);
+  display: flex;
+  gap: var(--space-24);
+}
+
+/* sizing width of icons */
+.link-media ul li a img {
+  width: clamp(2rem, 4vw, 3rem);
+}
+
+.link-media ul li a img:hover {
+    filter: brightness(1.2);
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+.maps-container iframe {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  margin-bottom: var(--space-32);
+}
+
+/* copyright */
+.copyright {
+  font-family: var(--Poppins);
+  font-size: var(--fn-poppins-sml);
+  font-weight: var(--fw-semibold);
+  color: var(--white-50);
+  text-align: center;
+  background-color: var(--screaming-green-500);
+  padding-block: var(--space-32);
+}
+
+@media (min-width: 48rem) {
+  .container .footer-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  iframe {
+    height: calc(4* var(--space-100));
+  }
+}
