@@ -36,6 +36,10 @@ nav .profile-name {
 }
 
 .profile-name .mobile {
+  display: block;
+}
+
+.profile-name .mobile {
     background-image: linear-gradient(
       to right,
       var(--screaming-green-400),
