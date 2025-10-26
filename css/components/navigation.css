@@ -36,10 +36,6 @@ nav .profile-name {
 }
 
 .profile-name .mobile {
-  display: block;
-}
-
-.profile-name .mobile {
     background-image: linear-gradient(
       to right,
       var(--screaming-green-400),
@@ -179,10 +175,6 @@ nav ul li a.active::before {
     font-family: var(--Inter);
     font-size: var(--fn-inter-h6);
     display: block;
-  }
-
-  .profile-name .mobile {
-    display: none;
   }
 
   nav.scrolled {
