@@ -41,6 +41,7 @@
   width: clamp(20rem, 50vw, 38.06rem);
   aspect-ratio: 609 / 679;
   z-index: -1;
+  /* border: 1px solid red; */
 }
 
 .bg-triangle {

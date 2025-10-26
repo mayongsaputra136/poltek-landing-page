@@ -1,3 +1,4 @@
+/* make the header fixed */
 header {
   max-width: 100%;
   width: 100%;
@@ -5,6 +6,7 @@ header {
   z-index: 9999;
 }
 
+/* Styling navbar */
 nav {
   background-color: var(--blue-shark-950);
   display: flex;
@@ -15,6 +17,7 @@ nav {
   box-shadow: var(--shadow-3);
 }
 
+/* for logo and the name of this university */
 nav .profile-name {
   width: clamp(12rem, 11rem + 3vw, 22rem);
   display: flex;
@@ -31,6 +34,23 @@ nav .profile-name {
 .profile-name h6 {
   display: none;
 }
+
+.profile-name .mobile {
+    background-image: linear-gradient(
+      to right,
+      var(--screaming-green-400),
+      var(--blue-shark-400)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    padding-left: var(--space-16);
+    font-weight: var(--fw-bold);
+    font-family: var(--Inter);
+    font-size: var(--fn-inter-h6);
+    display: block;
+  }
 
 /* Navigation links */
 nav ul {
@@ -80,6 +100,7 @@ nav ul li a.active::before {
   border: 2px solid transparent;
   border-radius: var(--br-10);
   cursor: pointer;
+  width: clamp(2.5rem, 6vw, 4rem);
 }
 
 .menubar:active,
@@ -154,6 +175,10 @@ nav ul li a.active::before {
     font-family: var(--Inter);
     font-size: var(--fn-inter-h6);
     display: block;
+  }
+
+  .profile-name .mobile {
+    display: none;
   }
 
   nav.scrolled {

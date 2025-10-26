@@ -74,6 +74,10 @@
         grid-template-columns: repeat(3, 1fr);
         align-items: start;
     }
+
+    .TRK img {
+        height: max-content;
+    }
     .TRK .details {
         padding-bottom: var(--space-56) ;
     }

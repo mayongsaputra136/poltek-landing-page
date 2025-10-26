@@ -3,7 +3,6 @@ footer {
   padding-top: var(--space-56);
   margin-top: calc(var(--space-100) * 2);
   overflow: hidden;
-  /* height: 100vh; */
 }
 
 footer  h4 {
