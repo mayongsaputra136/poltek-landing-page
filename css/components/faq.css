@@ -1,10 +1,10 @@
-/* .faq {
+.faq {
   position: relative;
-} */
+}
 
 .container .model-rh {
-  position: relative;
-  overflow: visible;
+  /* position: relative; */
+  /* overflow: visible; */
 }
 
 .circle-blur-t-l {
@@ -22,6 +22,7 @@
   right: 0;
   width: clamp(5rem, 15vw, 20.19rem);
   aspect-ratio: 1 / 1;
+  transform: translateZ(0);
 }
 
 .accor-item {
@@ -107,8 +108,9 @@
 
   .circle-clur-b-r {
     position: absolute;
-    /* bottom:  calc(-1 * var(--space-64) - var(--space-8)); */
-    right: 0;
-    
+    top:30rem;
+    left: 30rem
   }
 }
+
+/* Plase check the top and bottom section */

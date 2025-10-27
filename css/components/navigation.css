@@ -10,8 +10,10 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--space-16);
+  padding-block: var(--space-8);
+  padding-inline: var(--space-32);
   color: var(--white-50);
+  font-family: var(--Poppins);
 }
 
 nav .profile-name {
@@ -157,6 +159,7 @@ nav ul li a.active::before {
   nav.scrolled {
     position: fixed;
     width: 100%;
+    box-shadow: var(--shadow-12);
     padding-inline: var(--space-40);
     border-end-end-radius: 0;
     border-end-start-radius: 0;
