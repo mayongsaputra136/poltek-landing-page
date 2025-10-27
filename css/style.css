@@ -3,6 +3,7 @@
 @import url("./global/fonts.css");
 @import url("./global/buttons.css");
 @import url("./global/decorations.css");
+@import url("./global/animation.css");
 
 /* components */
 @import url("./components/navigation.css");
@@ -11,3 +12,4 @@
 @import url("./components/why-us.css");
 @import url("./components/major.css");
 @import url("./components/faq.css");
+@import url("./components/footer.css");

@@ -1,6 +1,6 @@
 :root {
   /* Screamin' Green */
-  --screaming-green-50: hsl(116, 88%, 97%);
+  --screaming-green-50: rgb(242, 254, 241);
   --screaming-green-100: hsl(116, 94%, 93%);
   --screaming-green-200: hsl(117, 87%, 85%);
   --screaming-green-300: hsl(118, 85%, 67%);
@@ -131,7 +131,7 @@ a {
 }
 
 img,
-svg {
+svg, iframe {
   display: block;
   max-width: 100%;
   height: auto;
@@ -146,6 +146,7 @@ button {
 }
 
 .container {
-  padding-block: min(calc(var(--space-64) - 0.25rem), 2%);
-  padding-inline: min(calc(var(--space-64) - 0.25rem), 2%);
+  padding: min(calc(var(--space-64) - 0.25rem), 2%);
+  max-width: 75rem;
+  margin: 0 auto;
 }
